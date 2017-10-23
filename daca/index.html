@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html>
+<title>DACA - Elon News Network</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Merriweather"  rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Merriweather", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+    
+    p{
+        
+        text-align: left;
+        font-family: "Open Sans";
+    }
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("https://s3.amazonaws.com/snwceomedia/enn/b1d8470f-1f2b-4db5-9bb0-210ca4418be3.sized-1000x1000.jpg");
+    width: 100%;
+    min-height: 100%;
+
+
+}
+    .w3-wide {
+        letter-spacing: 30px;
+        font-size: 200%;
+    }
+
+    
+    .w3-left {
+        margin-top: 500px;
+        
+        
+    }
+    
+    
+    .w3-bar-item {
+        
+        background-color: white;
+        
+    }
+    
+    .article {
+        
+        width: 60%;
+       float: left;
+    }
+    
+    .sidebar {
+        
+        display: inline-block;
+        margin-left: 50px;
+    }
+    
+    .factbox1 {
+        
+        float: right;
+        width: 200px;
+        position: relative;
+        margin-top: 20px;
+        margin-right: 20px;
+        border-top-style: solid;
+        margin-left: -40px;
+        
+    }
+    
+    .factbox1 li {
+        
+        font-size: 90%;
+        
+    }
+
+    
+    .picture {
+        
+        border-top-style: solid;
+        padding-top: 5px;
+        
+    }
+    
+    .dropcap {
+        
+        font-family: "Merriweather";
+        font-size: 375%;
+        float: left;
+        margin-right: 10px;
+        margin-top: -5px;
+        margin-bottom: -30px;
+        color: rgb(197, 5, 13); 
+    }
+    
+    .timeline {
+        position: relative;
+        overflow: auto;
+        float: right;
+        display: inline-block;
+        float: right;
+        width: 200px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-left: -40px;
+        border-top-style: solid;
+        margin-bottom: 30px;
+    }
+    
+ 
+    
+    
+    .timeline time {
+        font-style: italic;
+        font-size: 80%;
+        line-height: 10px;
+        
+    }
+    
+    .timeline ul {
+        
+        list-style-type: none;
+    }
+    
+    .timeline h5 {
+        font-size: 100%;
+        color: rgb(197, 5, 13);
+        
+    }
+    
+    .attribution {
+        font-style: italic;
+        font-size: 90%;
+        line-height: 120%;
+        
+    }
+    
+    .subhead {
+        
+        font-size: 120%;
+        font-style: italic;
+        
+    }
+    
+    .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+    
+    .video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+    
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+    
+    @media (max-width: 570px) {
+        
+        .sidebar {
+            float: left;
+            width: 250px;
+        }
+        
+        .article {
+            display: block;
+            margin: auto;
+            width: 90%;
+        }
+        
+         .bgimg-1 {
+    background-image: url("https://s3.amazonaws.com/snwceomedia/enn/a437a365-99a0-4879-8fa2-f38378e45aa8.sized-1000x1000.jpg");
+    width: 100%;
+    min-height: 100%;
+
+
+}
+        
+        .w3-left {
+            margin-top: 0px;
+            
+        }
+        
+    }
+    
+ 
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        max-width: 100%;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="http://www.elonnewsnetwork.com/" class="w3-bar-item w3-button">ELON NEWS NETWORK</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    
+    <a href="http://www.elonnewsnetwork.com/" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:wrap;">
+    <span class="w3-left w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity;" id="headline;"><h1 class="headline">'We need your help'</h1></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about" align="center">
+    
+    <h2 style="font-size: 150%">As Elon University wrestles with addressing DACA's implications, one Burlington "Dreamer" urges students to show solidarity </h2>
+    <h6 style="padding-bottom: 30px;">Emmanuel Morgan | Managing Editor | @_EmmanuelMorgan</h6>
+    
+    
+    <div class="article" id="text" align="left">
+        
+        
+        
+    <div class="dropcap">W</div><p>hen she was young, Yazmin Rico’s house in Mexico — her native country — neighbored a pair of railroad tracks. And sometimes when she played outside with her siblings or friends, she saw people latched to a train as it ferried them toward the United States. At the time, she didn’t understand what they were doing. 
+</p>
+        
+<p>But she knows all too well now.</p>
+        
+<p>“When I grew up, things started making sense,” she said.</p>
+        
+<p>The little girl who watched people desert everything just for the less-than-certain chance at a better life in a foreign land ultimately took the same leap. No, she and her family didn’t hitchhike on a train. But they did migrate here 15 years ago. Burlington became home for the then 13-year-old. And through determination, a splash of luck and  the Deferred Action for Childhood Arrivals program, Rico, 28, is now a Masters student at the University of North Carolina at Chapel Hill. 
+</p>
+        
+<p>Enacted in 2012 by President Barack Obama, DACA grants protection from deportation and work permits for people whose parents brought them to the United States illegally before they were 16. But that reality for thousands of similar people recently blurred. Earlier this month, Attorney General Jeff Sessions relayed President Donald Trump’s message that DACA will soon end.</p>
+        
+<p>If Congress fails to legislate a deal before March, nearly 800,000 people like Rico could be stripped from a country they consider home through no choice of their own. </p>
+        
+       <p> And as Elon University, the biggest university near Rico’s hometown, wrestles with addressing this issue, she has one message for the students and administration: think creatively to show solidarity.</p>
+        <p>The stakes are too high for you not to, she said. </p>
+<p>“Every college student has the power to make a difference,” Rico said. “At a private school, it may be easy to stay in that bubble. But Burlington is your community and this is your home now. And you might not realize it, but undocumented immigrants like me are everywhere. And we need your help.”</p>
+        
+   <img src="https://s3.amazonaws.com/snwceomedia/enn/b50f8146-89aa-4b17-b8aa-0d5464f02403.sized-1000x1000.jpg"  alt=""  width="100%">
+        
+<p style="font-size:70%; font-style: italic; padding-top:-20px;">Yazmin Rico presents a series of old photographs from her personal collection including images of her parents, grandparents, and herself. [Caroline Brehman | ENN] </p>
+
+
+<h3 class="subhead">Home but not home</h3>
+
+<p>Despite being “everywhere,” Rico said Burlington wasn’t a hospitable nurturing ground. </p>
+        
+<p>According to federal data, the government approved 27,385 DACA applications in North Carolina, the seventh-largest deferral population in the country.The Migration Policy Institute also estimates more than 66,000 people are eligible for DACA deferrals here.</p>
+        
+<p>But Rico said these overwhelming numbers don’t promise a favorable experience for immigrants — especially in Burlington. </p>
+
+<p>In 2000, 72.6 percent of Burlington residents were white, according to the United States Census Bureau. Only 6.8 percent of residents were Hispanic. And 15 years later, the numbers are still skewed. Fifty percent of Burlington residents were white in 2015 and only 7 percent were Hispanic. </p>
+
+<p>Rico said being a vast minority in a rural town made her paranoid. Some of her friends were deported. And recently, deportations in Burlington spiked. “Unusually intense” immigration raids occurred in 11 cities nationwide in February within a 48 hour span — including Burlington.  </p>
+
+<p>Microaggressions and stereotypes exist everywhere, Rico said. But she thinks Burlington may be on the severe side.</p>
+
+<p>“Burlington is home — it’s where I grew up and I know those streets,” Rico said. “But at the same time, there is fear. When you walk into some places there is a different perception. In my opinion, Alamance county just isn’t as accepting.</p>
+
+<p>“I felt like an outsider and I lived there for more than 10 years.”</p>
+
+
+<h3 class="subhead">Thinking creatively</h3>
+
+<p>It wasn’t until high school when Rico noticed these things, though. 
+
+<p>When she was 15, she tried attaining her driver’s license. But being undocumented toughened the process. Instead of flying, she either took a bus or train on cross country trips because she feared being detained in the airport. </p>
+
+<p>And she couldn’t study abroad or secure desired internships because she lacked a Social Security number. She “found a way to make it work” and graduated from Walter Williams High School in Burlington in 2007.</p>
+
+<p>But finding a college presented another gamut of challenges.</p>
+
+<p>“In high school, I was an honors student and did pretty well,” Rico said.“But being undocumented meant I had to pay out of state tuition, which made colllege kind of impossible.”</p>
+        
+<h3 class="subhead">Coming out of the shadows</h3>
+        
+<p>Rico attended Guilford College from 2007-2011. Other colleges were either too expensive or were unaccepting toward undocumented immigrants. Rico said Elon had a policy saying they won’t accept undocumented people. But when Obama enacted DACA, she said a weight lifted. Finally, she said she was able to live without fear of being deported.</p>
+
+<p>Applying for the program is a stringent process. Applicants cant’ be convicted felons or have serious misdemeanors. But after she passed in 2014, Rico said she and people like her are given a new life.</p>
+
+<p>“Once you are given an opportunity to come out of the shadows, it is life changing,” Rico said.</p>
+
+<p>For almost a year, she lived without fear. Trump’s candidacy changed that. After he descended his gilded escalator and called Mexican’s “rapists” while announcing his campaign, she was stunned. His rhetoric on the campaign trail was just ask shocking. By the time Sessions announced the suspension of DACA, she wasn’t surprised anymore.</p>
+
+<p>“I honestly saw this coming from the first time he spoke as a candidate,” Rico said. “When he didn’t touch the program when he first got into office, I was shocked. But sooner or later I thought something would happen.”</p>
+        
+        <img src="https://s3.amazonaws.com/snwceomedia/enn/b031fd50-3def-4c90-b255-36fdd505f899.sized-1000x1000.jpg"  alt=""  width="100%">
+        <p style="font-size:70%; font-style: italic; padding-top:-20px;">Yazmin Rico surrounds herself with old photographs of her family and personal moments as she reflects on her journey of growing up in Burlington after leaving her native country of Mexico at the age of 13. [Caroline Brehman | ENN] </p>
+        
+        <h3 class="subhead">Engaging as a campus</h3>
+
+<p>Sylvia Munoz understands Rico’s fear. And while she doesn’t know her, she’s created conversation about this topic on campus to help similar people.</p>
+
+<p>As associate director of the Center for Race, Ethnicity and Diversity Education and director of the Spanish Center, she works everyday to make Elon more inclusive. While the majority of Elon’s students are white, Munoz said it’s important the campus understands this is a universal problem. At Elon, Greg Zaiser, vice president of enrollment, said student candidates are judged solely on their academic record and extracurricular profile. </p>
+
+        <p>And citing student privacy, Elon wouldn’t release the number of undocumented students on campus. But both Elon President Leo Lambert and SGA released statements condemning DACA’s recension, showing they care about this issue. But Munoz wants to do more. </p>
+        
+<p>“If we don’t do anything in six months, 800,000 people will be at risk of being deported,” Munoz said. “That is a huge number. There is a really horrible narrative around these people and we need to create a counternarrative around these people.”</p>
+
+<p>Munoz was instrumental in facilitating a panel discussing DACA with program recipients and Elon experts Sept. 15 in LaRose Digital Theatre. Seats overflowed as students, faculty and community members listened to the social, political and economical implications of DACA’s suspension.</p>
+
+<p>If all of North Carolina’s DACA workers were deported, the state could see $1.2 billion in lost revenue, according to the Center for American Progress. But besides the numerical losses, some say the emotional effect also severe. Heather Scavone, director of the Humanitarian Immigration Law Clinic and assistant professor of law, has helped more than 1,600 refugees and asylum seekers with legal assistance since 2010. She said she entered this field to serve those who need it. And she said her work is needed now more than ever.</p>
+
+<p>“These are some of the most desperate people out there,” Scavone said. “We’re working with some really vulnerable people and I want to help them any way I can.”</p>
+
+<h3 class="subhead">Moving forward</h3>
+    
+<p>Zaiser said it is too soon to speculate the implications Elon will face if DACA is indeed rescinded. But he said Lambert has joined other higher education and business leaders to craft new policies during the next several months. </p>
+
+<p>Besides her own personal story, Rico works to solve this problem as a policy intern for the American Civil Liberties Union (ACLU).</p>
+
+<p>Rico said she is proud of Elon and its students for tackling this problem head on. But she charged Elon students to continue this fight. </p>
+
+<p>The stakes are still too high, she said. </p>
+
+<p>“That is really encouraging,” she said. “It shows that college students are using the power that we have. Now we just have to keep going.”</p>
+
+
+    
+    
+        </div>
+    
+    <div class="sidebar" id="text" align="left">
+  
+  <div class="timeline" id="presidents">
+      
+      <h3 style="line-height: 100%; color:rgb(197, 5, 13); font-size: 120%;">DACA by the numbers</h3>
+    
+    <ul style="margin-left:-20px">
+      <li style="margin-left:-20px">
+          
+          <h3 style="line-height: 100%; color:rgb(197, 5, 13); font-size: 400%; font-weight: bold;">800k</h3>
+        
+         
+          <h6>If Congress does not create a deal before March, nearly 800,000 DACA recipients could be deported.</h6>
+          
+          <br>
+          
+          <h3 style="line-height: 100%; color:rgb(197, 5, 13); font-size: 400%; font-weight: bold;">27,385</h3>
+        
+         
+          <h6>According to federal data, 27,385 North Carolina residents have had their DACA applications approved, making it the seventh largest DACA population in the country.</h6>
+          
+ 
+          <br>
+
+        <h3 style="line-height: 100%; color:rgb(197, 5, 13); font-size: 400%; font-weight: bold;">66k</h3>
+          
+        <h6>The Migration Policy Insitute estimates that more than 66,000 are eligible for DACA referrals in North Carolina.</h6>
+          
+        <br>
+
+        <h3 style="line-height: 100%; color:rgb(197, 5, 13); font-size: 400%; font-weight: bold; ">$1.2b</h3>
+          
+        <h6>If all of North Carolina’s DACA workers were deported, the state could see $1.2 billion in lost revenue.</h6>
+    
+    </ul>
+    
+  </div>
+        <br>
+        
+        
+        
+        </div>
+  
+
+    <!-- Hide this text on small devices -->
+    
+  </div>
+  
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+
+
+<!-- Container (Portfolio Section) -->
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+
+
+<!-- Container (Contact Section) -->
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+    
+       <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-83314924-1', 'auto');
+  ga('send', 'pageview');
+</script> 
+    
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
