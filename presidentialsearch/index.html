@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<title>Who are the candidates? - Elon News Network</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Merriweather", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+    
+    p{
+        
+        text-align: left;
+        font-family: "Open Sans";
+    }
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("https://s3.amazonaws.com/media.etp/18481_cover_web_201f.jpg");
+    width: 100%;
+    min-height: 100%;
+
+
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/w3images/parallax2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+}
+    
+    .w3-left {
+        margin-top: 350px;
+        
+    }
+    
+    .w3-bar-item {
+        
+        background-color: white;
+        
+    }
+    
+    .article {
+        
+        width: 60%;
+       float: left;
+    }
+    
+    .sidebar {
+        
+        display: inline-block;
+        margin-left: 50px;
+    }
+    
+    .factbox1 {
+        
+        float: right;
+        width: 200px;
+        position: relative;
+        margin-top: 20px;
+        margin-right: 20px;
+        border-top-style: solid;
+        margin-left: -40px;
+        
+    }
+    
+    .factbox1 li {
+        
+        font-size: 90%;
+        
+    }
+
+    
+    .picture {
+        
+        border-top-style: solid;
+        padding-top: 5px;
+        
+    }
+    
+    .dropcap {
+        
+        font-family: "Merriweather";
+        font-size: 375%;
+        float: left;
+        margin-right: 10px;
+        margin-top: -5px;
+        margin-bottom: -30px;
+        color: rgb(197, 5, 13); 
+    }
+    
+    .timeline {
+        position: relative;
+        overflow: auto;
+        float: right;
+        display: inline-block;
+        float: right;
+        width: 200px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-left: -40px;
+        border-top-style: solid;
+        margin-bottom: 30px;
+    }
+    
+ 
+    
+    
+    .timeline time {
+        font-style: italic;
+        font-size: 80%;
+        line-height: 10px;
+        
+    }
+    
+    .timeline ul {
+        
+        list-style-type: none;
+    }
+    
+    .timeline h5 {
+        font-size: 100%;
+        color: rgb(197, 5, 13);
+        
+    }
+    
+    .attribution {
+        font-style: italic;
+        font-size: 90%;
+        line-height: 120%;
+        
+    }
+    
+    .subhead {
+        
+        font-size: 120%;
+        font-style: italic;
+        
+    }
+    
+    .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+    
+    .video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+    
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+    
+    @media (max-width: 570px) {
+        
+        .sidebar {
+            float: left;
+            width: 200px;
+        }
+        
+        .article {
+            display: block;
+            margin: auto;
+            width: 90%;
+        }
+        
+    }
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="http://www.elonnewsnetwork.com/" class="w3-bar-item w3-button">ELON NEWS NETWORK</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    
+    <a href="http://www.elonnewsnetwork.com/" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:wrap;">
+    <span class="w3-left w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity;">WHO ARE THE CANDIDATES?</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about" align="center">
+    
+    <h2 style="font-size: 150%">National and local experts refute Elon University’s argument for secrecy, saying it should publicly announce the names of its presidential finalists</h2>
+    <h6 style="padding-bottom: 30px;">Emmanuel Morgan | Managing Editor | @_EmmanuelMorgan</h6>
+    
+    
+    <div class="article" id="text" align="left">
+        
+        
+        
+    <div class="dropcap">A</div><p>n open government professional chuckled at Elon University's presidential search strategy, asking “What do they hope to accomplish?” by keeping the finalists' names under lock and key.</p>
+
+<p>A professor, who has worked at Elon for 28 years, was more straightforward, saying "It’s a mistake” to shroud the community in secrecy regarding its most important position. Regardless of how they expressed their thoughts, though, local and national experts say Elon is committing a disservice by not disclosing the names of its presidential short list.</p>
+
+<p>The question of President Leo Lambert's successor immediately arose when he announced Feb. 13 he would be stepping down. Days after his surprising announcement at the Board of Trustees meeting in Florida, Elon quickly established a 16-member search committee. The new president's tentative start date is Jan. 1, 2018. Wes Elingburg, a trustee and chair of the search committee encompassed of two students, eight trustees, four faculty members, one staff member and one senior staff member promised, "A wide open process as far as soliciting input from people."</p>
+
+<p>But his periodic eight emails in the last seven months lacked specifics, and he has denied media requests to elaborate further. Michael DeCesare, chair of the Committee on College and University Governance for the American Association of University Professors (AAUP), said that’s concerning.</p>
+
+<p>“The campus community will probably get an email saying, ‘Please welcome new president so and so,’” DeCesare said. “That’s exactly how it’s not supposed to be done — especially in the finalist stage.</p>
+
+<p>“The names of the finalists should be made public.”</p>
+
+<p>The AAUP, a national organization that develops standards and procedures for higher education, <a href="https://academeblog.org/2015/11/03/aaup-statement-on-presidential-searches/" target="_blank">released a statement in 2015 </a> condemning secret searches. The statement says confidentiality is expected initially as an influx of candidates will apply. But the climax of the search should be different. The statement says releasing the names and participating in open visits to campus are crucial as those actions “permit members of the campus community to participate in providing impressions, as well as to contribute to the candidate’s understanding of the culture of the institution.”</p>
+
+<p>DeCesare said presidents must fulfill a dual role — executive officer of the governing board and the chief academic officer of the institution and the faculty. If students and faculty aren't rooted in the search throughout, he said,they cannot judge the candidates' ability to do these things. Instead, they're forced to trust what they’re told — if they are told anything at all.</p>
+
+<p>And to DeCesare, that’s a problem.</p>
+
+<p>“From my perspective, the campus community should have ample opportunity to talk with the finalists to ask them questions to help the finalists understand the culture of campus,” he said. “When it's done in secret and they bring a finalist in under the cover of night just to meet with a few select people, it really doesn't produce a full cohesive search and it may not produce the best candidate.”</p>
+
+<h3 class="subhead">A 'dangerous trend'</h3>
+
+<p>Elon's lack of transparency follows a recent national fad among other universities. DeCesare called it a 'dangerous trend.' </p>
+
+<p>And its track record isn't promising. </p>
+
+<p>In 2016, Kennesaw State University appointed then-Georgia Attorney General Sam Olens as the only option, sparking a student and faculty silent protest demonstration for not conducting a national search and Olens’ controversial views on gay marriage. </p>
+
+<p>More notably, though, the University of Missouri is still reeling after Tim Wolfe resigned amid student pressure for failing to address racist incidents. One student went on a hunger strike and the Missouri football team said they wouldn't play until he resigned. He was appointed in a "closed session." And after protests rocked the campus in 2015, their enrollment has since dipped — 42 percent among blacks and 21 percent among whites — according to The Washington Post. </p>
+
+<p>Attorney Frank LoMonte, director of The Brechner Center for Freedom of Information at the University of Florida, said these examples alone should incline Elon to announce the names.</p>
+
+<p>“After Missouri, I can't believe anyone is still doing these things behind closed doors, but the universities seem to be slow learners,” LoMonte said. “Missouri took a risk on this unproven person who turned out to be a disaster. You could be dealing with a person with a serious scandal in their background if you don't let the public know who you're considering.”</p>
+
+<p>As president of Elon’s AAUP and a professor of history for 28 years, Jim Bissett said Elon’s handling of the search is not ideal. Elon's presidential search in 1998 was more cooperative.  </p>
+
+<p>According to Pendulum archives, the search committee disclosed the number of applications, which surpassed 115. The finalists — Lambert and Thomas Flynn —  also openly visited campus. </p>
+
+<p>And when Elon hires faculty, Bissett said,  it's transparent. They teach classes, present research and meet with multiple people. <a href="http://www.nclaonline.org/sites/default/files/documents/gov/North%20Carolina%20Sunshine%20Laws.pdf" target="_blank"> North Carolina Sunshine Laws </a> and similar laws in other states mandate public institutions release the names of presidential candidates, though many universities find loopholes. But Elon is private. And while he said the Board of Trustees "is not overstepping its bounds" to operate in secrecy, Bissett doesn't see the distinction. </p>
+
+<p>“As a private institution, Elon University enjoys nonprofit status, which means it doesn’t pay taxes and people who contribute to it are able to deduct that on their income taxes,” Bissett said. “To me, there's an obligation associated with that privilege and that obligation is to not behave like a corporation.</p>
+        
+        <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yg7JJZeDR_A" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p>“All of us who were hired here went through an open process and it would not have worked for us to say, ‘I don’t want my name to be public because I don’t want my current institution to know what I'm doing.’ Elon would have said ‘I'm sorry, we need to bring you to campus.’”</p>
+
+<h3 class="subhead">'The argument for secrecy collapses'</h3>
+
+<p>Through Vice President of University Communications Dan Anderson, Elingburg denied an interview to explain Elon's rationale for a secret search, saying he "will be communicating important information to the campus directly via email and the Presidential Search website." Other members of the search committee either refused to comment or did not respond to interview requests.</p>
+
+<p>As universities rely more on outside search firms — Elon hired Storbeck/Pimentel & Associates in February — more candidates expect confidentiality. Storbeck/Pimentel & Associates also declined to comment. LoMonte said secrecy prevents their current employers learning they are considering leaving, and protects their pride if they aren't selected. </p>
+
+<p>But while this caters to the candidate, LoMonte said it handicaps the constituents.</p>
+
+<p>“The argument for secrecy collapses once you get to the finalists stage,” LoMonte said. “There’s no way you would let yourself become a finalist for a presidency without telling the people at your current campus that you're a finalist. You also can't bring someone in from Washington, D.C., who is doing 100 searches a year and expect that person to know your campus well enough to know who's the best president. That choice has to be made by local people.”</p>
+
+<p>DeCesare said if the campus learns who becomes president simply from an email, it may lead to a troubling start for both the president and the community. Animosity on both sides might surface because they don't truly understand each other. But as the search committee continues to operate in secrecy, LoMonte said now is the time to voice concerns — before it's too late.</p>
+
+<p>"Universities claim to be preparing people to be involved participatory citizens and the most important decision on every campus is who gets the presidency," LoMonte said. "If you don't let your students have a say in that choice, then you're not sincere about preparing people for citizenship — you're just not.</p>
+
+<p>“I would demand as loudly and as forcefully as I could that the trustees bring the finalists to the campus for a town hall meeting with anyone who is interested. That's the least the campus is entitled to,” LoMonte said. “If the faculty, the students and the alumni all speak together as one, then I don't think your board can ignore that.”</p>
+
+<p style="font-style: italic">Margaret  Malone, news editor, contributed reporting. </p>
+    
+        </div>
+    
+    <div class="sidebar" id="text" align="left">
+  
+  <div class="timeline" id="presidents">
+      
+      <h3 style="line-height: 100%; color:rgb(197, 5, 13); font-size: 120%;">What the experts are saying</h3>
+    
+    <ul style="margin-left:-20px">
+      <li style="margin-left:-20px">
+        <img src="https://s3.amazonaws.com/media.etp/18478_jim_bissett_squaref.png" alt="Bissett" width="150px" style=" border-radius: 50%; display: inline-block; margin-bottom: -10px; margin-top:10px">
+          <br>
+          <h6>"As a private institution, Elon University enjoys nonprofit status, which means it doesn’t pay taxes and people who contribute to it are able to deduct that on their taxes. To me, there’s an obligation associated with that privilege and that obligation is to not behave like a corporation."</h6>
+        <h5>Jim Bissett</h5>
+        <h6 class="attribution">President of Elon’s AAUP and Professor of History </h6>
+      </li>
+        <li style="margin-left:-20px">
+        <img src="https://s3.amazonaws.com/media.etp/18480_michael_decesare_1f.jpg" alt="DeCesare" width="150px" style=" border-radius: 50%; display: inline-block; margin-bottom: -10px; margin-top:30px">
+          <br>
+          <h6>"The names of the finalists should be made public."</h6>
+        <h5>Michael DeCesare</h5>
+        <h6 class="attribution">Chair of the Committee on College and University Governance for the American Association of University Professors</h6>
+      </li>
+        <li style="margin-left:-20px">
+        <img src="https://s3.amazonaws.com/media.etp/18479_frank_lomonte2f.jpg" alt="LoMonte" width="150px" style=" border-radius: 50%; display: inline-block; margin-bottom: -10px; margin-top:30px">
+          <br>
+          <h6>"You could be dealing with a person with a serious scandal in their background if you don’t let the public know who you’re considering."</h6>
+        <h5>Frank LoMonte</h5>
+        <h6 class="attribution">Director of the Brechner Center for Freedom of Information at The University of Florida.</h6>
+      </li>
+    
+    </ul>
+    
+  </div>
+        <br>
+        <div class="factbox1" id="DeCesare" align="left">
+        
+        
+        <h3 style="line-height: 100%; color:rgb(197, 5, 13); font-size: 120%;">Who's on the Presidential Search Committee?</h3>
+    
+        <h6 style="font-style: italic">Trustees:</h6>
+        <ul style="margin-left: -20px;">
+            <li>Wesley Elingburg P'11 (chair) - Trustee</li>
+            <li>Noel Allen '69 P'07 (co-vice-chair) - Trustee</li>
+            <li>Kebbler McGhee Williams '98 (co-vice-chair) - Trustee</li>
+            <li>Kerrii Anderson '79 - Chair, Board of Trustees</li>
+            <li>Edward Doherty P'07 - Trustee</li>
+            <li>Chris Martin '78 P'13 - Trustee</li>
+            <li>Edmond Moriarty P'15 P'18 - Trustee</li>
+            <li>Douglas Spencer '16 - Youth Trustee</li>
+        </ul>
+        <h6 style="font-style: italic">Faculty:</h6>
+        <ul style="margin-left: -20px;">
+            <li>David Copeland - A. J. Fletcher Professor and Professor of Communications</li>
+            <li>Casey DiRienzo - Professor of Economics</li>
+            <li>Joel Karty - Chair of Academic Council, Professor of Chemistry</li>
+            <li>Maureen Vandermaas-Peeler P'16, P'17 - Professor of Psychology</li>
+        </ul>
+         <h6 style="font-style: italic">Staff:</h6>
+        <ul style="margin-left: -20px;">
+            <li>Lisa Keegan '03 - Assistant Vice President and Dean of Undergraduate Admissions</li>
+        </ul>
+        <h6 style="font-style: italic">Students:</h6>
+        <ul style="margin-left: -20px;">
+            <li>Morgan Bodenarain - Class of 2018, SGA Executive President</li>
+            <li>Caroline Dean - Class of 2018</li>
+        </ul>
+        <h6 style="font-style: italic">Senior Staff:</h6>
+        <ul style="margin-left: -20px;">
+            <li>Steven House - Provost and Executive Vice President</li>
+        </ul>
+    
+    </div>
+        
+        
+        </div>
+  
+
+    <!-- Hide this text on small devices -->
+    
+  </div>
+  
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+
+
+<!-- Container (Portfolio Section) -->
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+
+
+<!-- Container (Contact Section) -->
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83314924-1', 'auto');
+  ga('send', 'pageview');
+
+</script> 
+    
+</body>
+</html>
+
