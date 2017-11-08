@@ -335,6 +335,17 @@ body, html {
         
     }
     
+
+@media (max-width: 300px) {
+ 
+    .headline {
+        
+        margin-top: 0px;
+        
+    }
+    
+}
+
  
 
 /* Turn off parallax scrolling for tablets and phones */
