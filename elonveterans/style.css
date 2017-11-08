@@ -288,6 +288,14 @@ body, html {
 
 
 @media (max-width: 1024px) {
+    
+    .bgimg-1 {
+    background-image: url("https://s3.amazonaws.com/snwceomedia/enn/f5e6c89c-6130-42bd-abdf-7ba06e569ca0.sized-1000x1000.jpg");
+    width: 100%;
+    min-height: 100%;
+
+
+}
         
         
     .headline {
