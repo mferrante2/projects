@@ -5,6 +5,20 @@
     
 }
 
+@font-face {
+    
+    font-family: "Merriweather-light";
+    src: url(Merriweather-Light.ttf)
+    
+}
+
+@font-face {
+    
+    font-family: "Oswald";
+    src: url(Oswald-Regular.ttf)
+    
+}
+
 h1{
     font-family: "Merriweather-Regular";
     
@@ -184,7 +198,8 @@ body, html {
         font-size: 100%;
         margin-bottom: 30px;
         padding-bottom: 10px;
-        font-family: Merriweather-light;
+        font-family: "Merriweather-light";
+        
         
     }
     
