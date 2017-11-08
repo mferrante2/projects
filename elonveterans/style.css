@@ -87,14 +87,14 @@ body, html {
     
     font-size: 470%;
     letter-spacing: 4px;
-    font-family: Oswald-extralight;
+    font-family: Oswald;
     
 }
 
 .headline-bottom {
     
-    font-family: Oswald-demibold;
-    font-size: 500%;
+    font-family: Oswald;
+    font-size: 560%;
     
 }
     
@@ -287,7 +287,7 @@ body, html {
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
     
     .bgimg-1 {
     background-image: url("https://s3.amazonaws.com/snwceomedia/enn/f5e6c89c-6130-42bd-abdf-7ba06e569ca0.sized-1000x1000.jpg");
@@ -310,7 +310,7 @@ body, html {
     
     font-size: 300%;
     letter-spacing: 4px;
-    font-family: Oswald-extralight;
+    font-family: Oswald;
     display: inline-block;
     float: left;
     
@@ -318,7 +318,7 @@ body, html {
 
 .headline-bottom {
     
-    font-family: Oswald-demibold;
+    font-family: Oswald;
     font-size: 300%;
     display: inline-block;
     
