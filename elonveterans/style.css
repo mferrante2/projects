@@ -1,0 +1,323 @@
+@font-face {
+    
+    font-family: "Merriweather";
+    src: url(Merriweather-Regular.ttf)
+    
+}
+
+h1{
+    font-family: "Merriweather-Regular";
+    
+}
+    h3 {
+        font-family:"Oswald", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+    
+    p{
+        
+        text-align: left;
+        font-family: "Open Sans";
+    }
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("https://s3.amazonaws.com/snwceomedia/enn/f5e6c89c-6130-42bd-abdf-7ba06e569ca0.sized-1000x1000.jpg");
+    width: 100%;
+    min-height: 100%;
+
+
+}
+    .w3-wide {
+        letter-spacing: 30px;
+        font-size: 200%;
+    }
+
+    
+    .w3-left {
+        margin-top: 500px;
+        
+        
+    }
+    
+    
+    .w3-bar-item {
+        
+        background-color: white;
+        
+    }
+
+.headline {
+    
+    margin-top: 700px;
+    padding: 15px 20px 12px 20px;
+    background-color: white;
+    
+     
+}
+
+.headline-top {
+    
+    font-size: 470%;
+    letter-spacing: 4px;
+    font-family: Oswald-extralight;
+    
+}
+
+.headline-bottom {
+    
+    font-family: Oswald-demibold;
+    font-size: 500%;
+    
+}
+    
+    .intro {
+        
+        
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 100px;
+        
+    }
+    
+    
+    .container { 
+    
+        padding-top: 50px;
+        padding-bottom: 50px;
+    
+    }
+ 
+    
+    .col-sm-3 {
+        
+        position: fixed;
+        width: 80%;
+        
+        
+    }
+
+.header {
+    
+    text-align: left;
+    font-size: 150%;
+    color:rgb(68, 100, 54);
+}
+    
+    .col-sm-9 {
+        
+        border-left-style: solid;
+        border-left-color: gray;
+        border-left-width: thin;
+        
+        
+    }
+
+.btn {
+    
+    color:rgb(68, 100, 54);
+}
+
+    .btn-secondary {
+
+        
+        width: 170px;
+        margin-top: 10px;
+        float: left;
+        display: block;
+        color: rgb(68, 100, 54);
+        
+    }
+    
+    .row {
+        
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .dropcap h2{
+        
+        float: left;
+        font-size: 320%;
+        margin-right: 5px;
+        margin-bottom: -10px;
+    }
+    
+    .veteran {
+        
+        border-top-style: solid;
+        border-top-color: black;
+        border-top-width: thin;
+        padding-top: 20px;
+    }
+
+.crayton {
+    
+    border: none;
+    
+}
+    
+    .name {
+        
+        font-size: 300%;
+        text-align: left;
+        color: rgb(68, 100, 54);
+        
+    }
+    
+    .war {
+        
+        text-align: left;
+        font-size: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        font-family: Merriweather-light;
+        
+    }
+    
+    .crayton-picture1 {
+        
+        width: 49%;
+        margin-bottom: 50px;
+        float: left;
+        
+    }
+    
+     .crayton-picture2 {
+        
+        width: 49%;
+        margin-bottom: 50px;
+        float: right;
+        
+    }
+
+.burpitt-picture {
+    
+    width: 100%;
+    margin-bottom: 50px;
+    
+}
+
+
+.cutline {
+    
+    font-size: 70%;
+    margin-top: 10px;
+}
+
+.sidebar {
+    
+    border: 0;
+    
+}
+
+.position {
+    
+    text-align: left;
+    font-size: 150%
+}
+
+.deck {
+    
+    font-size: 120%;
+    margin-bottom: 20px;
+    display: block;
+    
+}
+
+.display-type {
+    
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    color: rgb(68, 100, 54);
+}
+
+
+
+
+    
+    
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+    
+@media (max-width: 2000px) {
+    
+    .intro {
+        
+        margin-top: 100px;
+        
+    }
+    
+    .headline {
+        
+        margin-top: 5;
+    }
+    
+}    
+
+
+
+@media (max-width: 1024px) {
+        
+        
+    .headline {
+    
+    margin-top: 400px;
+    padding: 15px 20px 12px 20px;
+    background-color: white;
+     
+}
+
+.headline-top {
+    
+    font-size: 300%;
+    letter-spacing: 4px;
+    font-family: Oswald-extralight;
+    display: inline-block;
+    float: left;
+    
+}
+
+.headline-bottom {
+    
+    font-family: Oswald-demibold;
+    font-size: 300%;
+    display: inline-block;
+    
+}
+        
+        .intro {
+            
+            
+            margin-top: 20px;
+        }
+
+
+}
+        
+    }
+    
+ 
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        max-width: 100%;
+    }
+}
