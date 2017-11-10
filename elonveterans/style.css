@@ -285,6 +285,7 @@ body, html {
         margin-top: 5;
     }
     
+    
 }    
 
 @media (max-width: 1000px) {
@@ -296,6 +297,8 @@ body, html {
     background-color: white;
      
 }
+    
+    
 
 .headline-top {
     
@@ -314,6 +317,14 @@ body, html {
     display: inline-block;
     
 }
+    
+    .col-sm-9 {
+        
+        border-left: none;
+        
+        
+    }
+
     
     
 }
