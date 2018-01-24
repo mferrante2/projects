@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body,h1,h2,h4,h5,h6 {font-family: "Merriweather", sans-serif;}
+
+h3 {
+    
+    font-family: "Oswald";
+    font-size: 250%;
+    text-align: left;
+}
+
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+    
+    p{
+        
+        text-align: left;
+        font-family: "Open Sans";
+    }
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("https://s3.amazonaws.com/snwceomedia/enn/8bb51b79-0132-45d7-8b09-dfd78a5d1757.sized-1000x1000.jpg");
+    width: 100%;
+    min-height: 100%;
+
+
+}
+   
+.container {
+    
+    margin-top: 50px;
+}
+
+.article {
+    
+    text-align: center;
+}
+
+.w3-wide {
+        letter-spacing: 30px;
+        font-size: 200%;
+    }
+
+    
+    .w3-left {
+        margin-top: 500px;
+        
+        
+    }
+    
+    
+    .w3-bar-item {
+        
+        background-color: white;
+        
+    }
+
+.sticky-top {
+        
+        top: 40px;
+    }
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    
+}
+
+/* Buttons */
+
+.btn-secondary {
+
+        
+        width: 170px;
+        margin-top: 10px;
+        display: inline-block;
+        background-color: pink;
+    border: none;
+    
+        
+    }
+
+.academics-btn {
+    
+    background-color: rgb(206,12,63); 
+}
+
+#academics {
+    
+    border-bottom-color: rgb(206,12,63); 
+    border-bottom-width: thick;
+}
+
+.academic-category-text {
+    
+    color: rgb(206,12,63);
+    border-color: rgb(206,12,63);
+}
+
+.campus-btn {
+    
+    background-color: rgb(0,206,255); 
+}
+
+#campus {
+    
+    border-bottom-color: rgb(0,206,255); 
+    border-bottom-width: thick;
+}
+
+.campus-category-text {
+    
+    color: rgb(0,206,255);
+    border-color: rgb(0,206,255);
+}
+
+.food-btn {
+    
+    background-color: rgb(255,126,26); 
+}
+
+#food {
+    
+    border-bottom-color: rgb(255,126,26); 
+    border-bottom-width: thick;
+}
+
+.food-category-text {
+    
+    color: rgb(255,126,26);
+    border-color: rgb(255,126,26);
+}
+
+.music-btn {
+    
+    background-color: rgb(255, 227, 80); 
+}
+
+#music {
+    
+    border-bottom-color: rgb(255, 227, 80); 
+    border-bottom-width: thick;
+}
+
+.music-category-text {
+    
+    color: rgb(255, 227, 80);
+    border-color: rgb(255, 227, 80);
+}
+
+.night-life-btn {
+    
+    background-color: rgb(104,214,142); 
+}
+
+#night-life {
+    
+    border-bottom-color: rgb(104,214,142); 
+    border-bottom-width: thick;
+}
+
+.night-life-category-text {
+    
+    color: rgb(104,214,142);
+    border-color: rgb(104,214,142);
+}
+
+.shopping-btn {
+    
+    background-color: rgb(237,108,152); 
+}
+
+#shopping {
+    
+    border-bottom-color: rgb(237,108,152); 
+    border-bottom-width: thick;
+}
+
+.shopping-category-text {
+    
+    color: rgb(237,108,152);
+    border-color: rgb(237,108,152);
+}
+
+.sports-fitness-btn {
+    
+    background-color: rgb(236,209,13); 
+}
+
+#sports-fitness {
+    
+    border-bottom-color: rgb(236,209,13); 
+    border-bottom-width: thick;
+}
+
+.sports-fitness-category-text {
+    
+    color: black;
+    border-color: rgb(236,209,13);
+}
+
+.travel-btn {
+    
+    background-color: rgb(98,85,161); 
+}
+
+#travel {
+    
+    border-bottom-color: rgb(98,85,161); 
+    border-bottom-width: thick;
+}
+
+.travel-category-text {
+    
+    color: rgb(98,85,161);
+    border-color: rgb(98,85,161);
+}
+
+.row2 {
+    background-color: white;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+    
+    
+}
+.row3 {
+   
+    margin-top: 50px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    
+}
+    
+/* Categories */
+
+/* .col-sm-3 {
+        
+        width: 80%;
+        
+        
+    }
+*/
+
+.section {
+    
+    margin-bottom: 70px;
+}
+
+.category-type {
+    
+    font-size: 300%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    
+}
+
+.categories {
+        
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        
+        display: table-cell;
+        align-content: center;
+        
+    }
+    
+.category-text {
+        
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        text-align: center;
+        border: 4px solid;
+        display: table-cell;
+        vertical-align: middle;
+        
+    }
+
+.pictures {
+    
+    margin-top: 40px;
+    display: inline-block;
+    
+}
+
+.individual-category {
+    
+    margin: 10px;
+}
+
+.mexican-food {
+    
+    float: left;
+}
+
+.italian-food {
+    
+    float: left;
+}
+.indian-food {
+    
+    float: left;
+}
+/*  
+    /* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 250px;
+	height: 250px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+    
+    
+ .article {
+        
+        width: 90%;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 50px;
+        
+    }
+    
+    
+.dropcap {
+        
+        font-family: "Merriweather";
+        font-size: 375%;
+        float: left;
+        margin-right: 10px;
+        margin-top: -5px;
+        margin-bottom: -30px;
+        color: rgb(197, 5, 13); 
+    }
+    
+/* Winner pages */
+
+.winner {
+    
+    font-size: 200%;
+    text-align: left;
+    
+}
+
+.food-headline {
+    
+    border-bottom-color: rgb(255,126,26);
+    
+}
+
+.academics-headline {
+    
+    border-bottom-color: rgb(206,12,63); 
+    
+}
+
+.campus-headline {
+    
+    border-bottom-color: rgb(0,206,255);  
+    
+}
+
+.sports-headline {
+    
+    border-bottom-color: rgb(236,209,13);
+    
+}
+
+.night-life-headline {
+    
+    border-bottom-color: rgb(104,214,142);
+}
+
+.shopping-headline {
+    
+    border-bottom-color: rgb(237,108,152);
+    
+}
+
+.travel-headline {
+    
+    border-bottom-color: rgb(98,85,161);
+    
+}
+
+.cutline {
+    font-size: 80%;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    
+}
+
+.col-3 {
+    
+    border-left: solid;
+    border-width: thin;
+    padding-left: 30px;
+}
+
+.runner-up {
+    
+    text-align: left;
+}
+
+.btn-food {
+    background-color: rgb(255,126,26);
+    
+}
+
+.btn-academics {
+    
+    background-color: rgb(206,12,63); 
+    
+}
+
+.btn-campus {
+    
+    background-color: rgb(0,206,255); 
+    
+}
+
+.btn-night-life {
+    
+    background-color: rgb(104,214,142); 
+    
+}
+
+.btn-shopping {
+    
+    background-color: rgb(237,108,152);  
+    
+}
+
+.btn-sports {
+    
+    background-color: rgb(236,209,13); 
+    
+}
+
+.btn-travel {
+    
+    background-color: rgb(98,85,161); 
+    
+}
+
+.back-arrow {
+    
+    margin-top: -4px;
+    
+}
+
+.new-container {
+    
+    position: relative;
+    transition: 3s ease;
+    backface-visibility: hidden;
+    
+}
+
+.new-container:hover .categories {
+    
+    opacity: 0.3;
+    transition: 0.5s;
+    
+}
+
+.text-block {
+    
+    position: absolute;
+    bottom: 95px;
+    right: 0px;
+    background-color: rgba(255,255,255,.8);
+    padding: 3px 8px 3px 8px;
+    width: 250px;
+    text-align: center;
+    
+}
+
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+    
+    @media (max-width: 570px) {
+        
+         
+    }
+    
+ 
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        max-width: 100%;
+    }
+    
+    .food-buttons {
+        position: static;
+        
+    }
+    
+    .navbar-collapse.collapse:not(.in) {
+        display: none !important;
+    }
+    
+    
+    
+}
