@@ -532,6 +532,24 @@ a:hover {
     
 }
 
+.byline {
+    
+    text-align: left;
+    font-size: 85%;
+    padding-top: 10px;
+}
+
+.runner-up {
+    text-align: left;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top-style: solid;
+}
+
+.sidebar {
+    
+    text-align: left;
+}
 
 
 .w3-wide {letter-spacing: 10px;}
