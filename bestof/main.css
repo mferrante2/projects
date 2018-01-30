@@ -39,10 +39,15 @@ body, html {
 
 
 }
+
+.w3-bar {
+    background-color: white;
+    
+}
    
 .container {
     
-    margin-top: 50px;
+    padding-top: 150px;
 }
 
 .article {
@@ -100,7 +105,7 @@ a:hover {
 }
 
 #academics {
-    
+    padding-top: 170px;
     border-bottom-color: rgb(206,12,63); 
     border-bottom-width: thick;
 }
@@ -117,7 +122,7 @@ a:hover {
 }
 
 #campus {
-    
+    padding-top: 170px;
     border-bottom-color: rgb(0,206,255); 
     border-bottom-width: thick;
 }
@@ -134,7 +139,7 @@ a:hover {
 }
 
 #food {
-    
+    padding-top: 170px;
     border-bottom-color: rgb(255,126,26); 
     border-bottom-width: thick;
 }
@@ -151,7 +156,7 @@ a:hover {
 }
 
 #music {
-    
+    padding-top: 170px;
     border-bottom-color: rgb(255, 227, 80); 
     border-bottom-width: thick;
 }
@@ -168,7 +173,7 @@ a:hover {
 }
 
 #night-life {
-    
+    padding-top: 170px;
     border-bottom-color: rgb(104,214,142); 
     border-bottom-width: thick;
 }
@@ -185,7 +190,7 @@ a:hover {
 }
 
 #shopping {
-    
+    padding-top: 170px;
     border-bottom-color: rgb(237,108,152); 
     border-bottom-width: thick;
 }
@@ -202,7 +207,7 @@ a:hover {
 }
 
 #sports-fitness {
-    
+    padding-top: 170px;
     border-bottom-color: rgb(236,209,13); 
     border-bottom-width: thick;
 }
@@ -219,7 +224,6 @@ a:hover {
 }
 
 #travel {
-    
     border-bottom-color: rgb(98,85,161); 
     border-bottom-width: thick;
 }
@@ -325,18 +329,6 @@ a:hover {
 }
 /*  
     /* entire container, keeps perspective */
-.flip-container {
-	perspective: 1000px;
-}
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
-
-.flip-container, .front, .back {
-	width: 250px;
-	height: 250px;
-}
 
 /* flip speed goes here */
 .flipper {
@@ -551,6 +543,16 @@ a:hover {
     text-align: left;
 }
 
+h5 {
+    
+    font-size: 130%;
+}
+
+h6 {
+    
+    font-size: 100%;
+}
+
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -573,11 +575,7 @@ a:hover {
         position: static;
         
     }
-    
-    .navbar-collapse.collapse:not(.in) {
-        display: none !important;
-    }
-    
+  
     
     
 }
