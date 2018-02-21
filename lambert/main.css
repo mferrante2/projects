@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body,h1,h2,h4,h5,h6 {font-family: "Merriweather", sans-serif;}
+
+h3 {
+    
+    font-family: "Oswald";
+    font-size: 250%;
+    text-align: left;
+}
+
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+    
+    p{
+        
+        text-align: left;
+        font-family: "Open Sans";
+    }
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("https://s3.amazonaws.com/snwceomedia/enn/8bb51b79-0132-45d7-8b09-dfd78a5d1757.sized-1000x1000.jpg");
+    width: 100%;
+    min-height: 100%;
+
+
+}
+
+.w3-bar {
+    background-color: white;
+    
+}
+   
+
+
+.article {
+    
+    text-align: center;
+    width: 100%;
+}
+
+.header-container {
+    
+    position: relative;
+   
+}
+
+
+.headline {
+    
+     background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
+
+.life {
+    
+    font-family: Oswald;
+    font-size: 1000%;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 10px #000000;
+    font-weight: bold;
+    
+}
+
+.without {
+    
+    color: white;
+    text-shadow: 0 0 10px #000000;
+    font-size: 700%;
+    font-family: Merriweather italic;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    
+}
+
+.leo {
+    
+    font-family: Oswald;
+    font-size: 1000%;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 10px #000000;
+    font-weight: bold;
+    
+}
+
+.video-container {
+    z-index:0;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+    
+}
+
+.video-container iframe {
+    
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.deck {
+    
+    font-size: 150%;
+    line-height: 150%;
+    margin-bottom: 50px;
+}
+
+.subhead {
+    
+    font-family: Oswald;
+    font-size: 130%;
+    text-transform: uppercase;
+    
+    
+}
+
+.cutline {
+    
+    text-align: right;
+}
+
+.byline {
+    
+    margin-bottom: 50px;
+}
+
+.container {
+    
+    padding-top: 50px;
+
+}
+
+.row1 {
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    align-content: center;
+}
+
+.row2 {
+    
+    margin-bottom: 50px;
+    
+    
+}
+
+.row3 {
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    align-content: center;
+}
+
+.pullquote {
+    
+    margin-top: -550px;
+    margin-bottom: 260px;
+    color: white;
+    text-shadow: 0 0 10px #000000;
+    width: 50%;
+    margin-left: 400px;
+}
+
+.w3-wide {
+        letter-spacing: 30px;
+        font-size: 200%;
+    }
+
+    
+    .w3-left {
+        margin-top: 500px;
+        
+        
+    }
+    
+    
+    .w3-bar-item {
+        
+        background-color: white;
+        
+    }
+
+.sticky-top {
+        
+        top: 40px;
+    }
+
+
+
+/* Buttons */
+
+.btn-secondary {
+
+        
+        width: 170px;
+        margin-top: 10px;
+        display: inline-block;
+        background-color: pink;
+    border: none;
+    
+        
+    }
+
+    
+/* Categories */
+
+/* .col-sm-3 {
+        
+        width: 80%;
+        
+        
+    }
+*/
+
+.section {
+    
+    margin-bottom: 70px;
+}
+
+.category-type {
+    
+    font-size: 300%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    
+}
+
+.categories {
+        
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        
+        display: table-cell;
+        align-content: center;
+        
+    }
+    
+.category-text {
+        
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        text-align: center;
+        border: 4px solid;
+        display: table-cell;
+        vertical-align: middle;
+        
+    }
+
+.pictures {
+    
+    margin-top: 40px;
+    display: inline-block;
+    
+}
+
+.individual-category {
+    
+    margin: 10px;
+}
+
+
+.header-image {
+    
+    width: 300px;
+}
+    
+ .article {
+        
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 50px;
+        
+    }
+    
+    
+.dropcap {
+        
+        font-family: "Merriweather";
+        font-size: 550%;
+        float: left;
+        margin-right: 10px;
+        margin-top: -30px;
+        margin-bottom: -30px;
+        color: rgb(197, 5, 13); 
+    }
+    
+
+a:hover {
+    
+    color: rgb(197, 5, 13);
+    text-decoration: none;
+    
+}
+
+
+
+
+.cutline {
+    font-size: 80%;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    
+}
+
+
+
+
+
+.text-block {
+    
+    position: absolute;
+    bottom: 95px;
+    right: 0px;
+    background-color: rgba(255,255,255,.8);
+    padding: 3px 8px 3px 8px;
+    width: 250px;
+    text-align: center;
+    
+}
+
+
+h5 {
+    
+    font-size: 130%;
+}
+
+h6 {
+    
+    font-size: 100%;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+    
+ 
+
+/* Turn off parallax scrolling for tablets and phones */
+@media (max-width: 1024px) {
+    
+    .headline {
+        
+        margin-top: 0px;
+        
+    }
+    
+    .life {
+    
+    font-size: 700%;
+    
+}
+
+.without {
+    
+    font-size: 400%; 
+}
+
+.leo {
+    
+    font-size: 700%;
+    
+}  
+    .container {
+         
+         padding-top: 50px;
+     }
+    
+    .row1 {
+         
+         margin-left: 10%;
+         margin-right: 10%;
+     }
+     
+     .row3 {
+         
+         margin-left: 10%;
+         margin-right: 10%;
+     }
+    
+    .pullquote {
+    
+    margin-top: -400px;
+    margin-bottom: 220px;
+    color: white;
+    text-shadow: 0 0 10px #000000;
+    width: 50%;
+    margin-left: 300px;
+}
+    
+    .quote {
+        
+        font-size: 150%;
+    }
+    
+    .name {
+        
+        font-size: 110%;
+    }
+    
+    .attribution {
+        
+        font-size: 110%;
+    }
+}
+
+
+
+
+ @media (max-width: 760px) {
+        
+        .headline {
+        
+        margin-top: 50px;
+        
+    }
+    
+    .life {
+    
+    font-size: 400%;
+    
+}
+
+.without {
+    
+    font-size: 250%; 
+}
+
+.leo {
+    
+    font-size: 400%;
+    
+}
+     
+     .container {
+         
+         padding-top: 50px;
+     }
+        
+     .row1 {
+         
+         margin-left: 10%;
+         margin-right: 10%;
+     }
+     
+     .row3 {
+         
+         margin-left: 10%;
+         margin-right: 10%;
+     }
+     
+     .pullquote {
+    
+    margin-top: -220px;
+    margin-bottom: 90px;
+    color: white;
+    text-shadow: 0 0 10px #000000;
+    width: 50%;
+    margin-left: 140px;
+}
+     
+     .quote {
+        
+        font-size: 100%;
+    }
+    
+    .name {
+        
+        font-size: 80%;
+    }
+    
+    .attribution {
+        
+        font-size: 80%;
+    }
+         
+    }
+
+@media (max-width: 400px) {
+ 
+    
+    .pullquote {
+        
+        margin-bottom:50px;
+    }
+    
+}
