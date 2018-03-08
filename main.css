@@ -2,42 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-body,h1,h2 { font-family: "Merriweather", sans-serif; color: black}, h4 {font-family: "Merriweather", sans-serif; } ,h5,h6 {font-family: "Merriweather", sans-serif;}
+body,h1,h2,h4,h5,h6 {font-family: "Merriweather", sans-serif;}
 
 h3 {
     
     font-family: "Oswald";
-    font-size: 500%;
-   
-    color: white; 
-    padding-top: 0px;
-}
-
-h4 {
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    font-size: 180%;
-    text-align: left;
-    color: white; 
-    float: center;
-}
-h5 {
-    font-family: "Merriweather", sans-serif;
     font-size: 250%;
-    text-align: center;
-    color: black; 
-    text-transform: full-width:
-
+    text-align: left;
 }
-h2 {
-    text-align: center;
-    color: black;
-    font-size: 200%;
-    
-    
-}
-
-
 
 body, html {
     height: 100%;
@@ -51,39 +23,256 @@ body, html {
         font-family: "Open Sans";
     }
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url("https://s3.amazonaws.com/snwceomedia/enn/e67a15fe-207c-48b2-b80c-b6ca8a6cbe5a.sized-1000x1000.png");
-    width: 100%;
-    min-height: 100%;
-
-
-}
-
-
 
 .w3-bar {
     background-color: white;
     
 }
    
-.container {
-    
-    padding-top: 50px;
-}
+
 
 .article {
     
     text-align: center;
     width: 100%;
+}
+
+.header-container {
+    
+    position: relative;
+   
+}
+
+.scroll {
+    
+    margin-top: -700px;
+}
+
+
+.headline {
+    position: relative;
+    text-align: center;
+    color: black;
+    padding-top: 00px;
+    z-index: 10;
+    display: block;
+}
+
+.bold {
+    text-shadow: 0 0 15px #000000;
+    font-family: Oswald;
+    text-transform: uppercase;
+    font-size: 800%;
+    font-weight: bold;
+    color: white;
+}
+
+.regular {
+    text-shadow: 0 0 15px #000000;
+    font-family: Oswald;
+    text-transform: uppercase;
+    font-size: 200%;
+    font-weight: lighter;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.super-bold {
+    
+   text-shadow: 0 0 15px #000000;
+    font-family: Oswald;
+    text-transform: uppercase;
+    font-size: 800%;
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    color: rgb(197,3,13);
+
+  
+}
+
+.first {
+   
+    margin-bottom: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.second {
+    
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.third {
+   
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fourth {
+  
+    margin-bottom: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fifth {
+    
+    margin-bottom: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sixth {
+   
+   margin-bottom: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.image-container {
+    
+     background-image: url("https://s3.amazonaws.com/snwceomedia/enn/9210fd97-25c5-4f87-9486-152703e2f82b.sized-1000x1000.jpg");
+    
+    
+    height: 1500px;
+    
+   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    z-index:0;
+    overflow: hidden;
+    
+}
+
+
+.deck {
+    
+    font-size: 150%;
+    line-height: 150%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.subhead {
+    
+    font-family: Oswald;
+    font-size: 130%;
+    text-transform: uppercase;
+    
+    
+}
+
+.fact-box-header {
+    
+    border-bottom: solid;
+    border-bottom-color: gray;
+    font-family: Oswald;
+    font-size: 150%;
+    text-transform: uppercase;
+    color: rgb(197,3,13);
+    padding-bottom: 5px;
+}
+
+.fact-box-big-number {
+    
+    font-family: Oswald;
+    font-size: 400%;
+    font-weight: bolder;
+   color: black;
+    
+}
+
+.fact-box-copy {
+    
+    margin-top: -10px;
+    font-size: 95%
+    
+}
+
+.photo-credit {
+    
+    text-align: right;
+}
+
+.byline {
+    
+    margin-bottom: 50px;
+}
+
+
+.photo-special {
+    
+    border-top: solid;
+    border-top-width: 1px;
+    padding-top: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+     border-bottom: solid;
+    border-bottom-width: 1px;
+    
+}
+
+.container {
+    
+    padding-top: 50px;
+
+}
+
+.row1 {
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    align-content: center;
+}
+
+
+
+
+.pull-quote {
+    
+    font-family: Oswald;
+    text-transform: uppercase;
+    font-size: 140%;
+    line-height: 130%;
+    font-weight: lighter;
+    
+}
+
+.pull-quote-name {
+    margin-top: 20px;
+    font-size: 90%; 
+    
+}
+
+.pull-quote-title {
+   margin-top: -10px;
+    font-size: 90%; 
+    
+}
+
+.photo-credit {
+    font-size: 80%;
+    margin-top: 5px;
+    text-align: right;
+    
+}
+
+.cutline {
+    
+    
 }
 
 .w3-wide {
@@ -105,206 +294,14 @@ body, html {
         
     }
 
-.sticky-top {
-        
-        top: 40px;
-    }
 
-a:hover {
-    color: black;
-    text-decoration: none;
-    
-}
-
-/* Buttons */
-
-.btn-secondary {
-
-        
-        width: 170px;
-        margin-top: 10px;
-        display: inline-block;
-        background-color: black;
-    border: none;
-    
-        
-    }
-
-.academics-btn {
-    
-    background-color: black; 
-}
-
-#academics {
-    padding-top: 20px;
-    border-bottom-color: black; 
-    border-bottom-width: thick;
-}
-
-.academic-category-text {
-    font-family: Merriweather;
-    
-    color: white;
-    border-color: white;
-    text-align: left; 
-    padding-right: 70px;
-    
-
-}
-academic-category-subtext {
-    font-family: Merriweather;
-    font-size: 150% 
-    color: white;
-    border-color: white;
-    text-align: left; 
-    padding-right: 100px;
-    
-
-}
-
-
-.row2 {
-    background-color: white;
-    padding-top: 0px;
-    padding-bottom: 10px;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 40px;
-    
-    
-}
-.row3 {
-   
-    margin-top: 50px;
-    width: 100%;
-    display: block;
-    margin: auto;
-    
-}
-    
-/* Categories */
-
-/* .col-sm-3 {
-        
-        width: 80%;
-        
-        
-    }
-*/
 
 .section {
     
-    margin-bottom: 0px;
+    margin-bottom: 70px;
 }
 
-.category-type {
-    
-    font-size: 500%;
-    text-align: center;
-  
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    padding-top: 100px;
-    
-    background-color: lightslategrey;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    
-    
-}
 
-.categories {
-        
-        border-radius: 0%;
-        height: 300px;
-        width: 1080px;
-        padding-bottom: 0px; 
-        align-content: center;
-        vertical-align: middle;
-        
-    }
-
-    
-.category-text {
-        
-        border-radius: 100%;
-        width: 350px;
-        height: 350px;
-        text-align: center;
-        border: 4px solid;
-        display: none;
-        vertical-align: middle;
-        
-    }
-
-.category-subtext {
-    font-size: 200%;
-    text-align: left;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-top: 0px;
-    
-    
-    
-    
-}
-.pictures {
-    
-    margin-top: 0px;
-    display: inline-block;
-    
-}
-
-.individual-category {
-    
-    margin: 0px;
-}
-
-.mexican-food {
-    
-    float: left;
-}
-
-.italian-food {
-    
-    float: left;
-}
-.indian-food {
-    
-    float: left;
-}
-/*  
-    /* entire container, keeps perspective */
-
-/* flip speed goes here */
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-
-	position: relative;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-	backface-visibility: hidden;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
-.back {
-	transform: rotateY(180deg);
-}
-    
 
 .header-image {
     
@@ -316,7 +313,7 @@ academic-category-subtext {
         width: 100%;
         display: inline-block;
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         
     }
     
@@ -324,138 +321,43 @@ academic-category-subtext {
 .dropcap {
         
         font-family: "Merriweather";
-        font-size: 375%;
+        font-size: 550%;
         float: left;
         margin-right: 10px;
-        margin-top: -5px;
+        margin-top: -30px;
         margin-bottom: -30px;
         color: rgb(197, 5, 13); 
     }
     
-/* Winner pages */
 
-.winner {
+a:hover {
     
-    font-size: 300%;
-    text-align: left;
+    color: rgb(197, 5, 13);
+    text-decoration: none;
     
 }
 
 
-.academics-headline {
-    
-    border-bottom-color: black; 
-    
-}
-
-
-.cutline {
-    font-size: 80%;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    text-align: left;
-    font-family:"Merriweather";
-    
-    
-  
-    
-    
-}
-
-.col-3 {
-    
-    border-left: solid;
-    border-width: thin;
-    padding-left: 30px;
-}
-
-.runner-up {
-    
-    text-align: left;
-}
 
 
 
-.back-arrow {
-    
-    margin-top: -4px;
-    
-}
 
-.new-container {
-    
-    position: relative;
-    transition: 3s ease;
-    backface-visibility: hidden;
-    
-}
 
-.photos {
-    
-    
-    
-}
 
-.new-container:hover .categories {
-    
-    opacity: 0.3;
-    transition: 0.5s;
-    
-}
-
-.new-container .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    background-color: slategrey;
-    
-    padding-left: 10px; 
-    padding-right: 10px; 
-    
-}
 
 
 .text-block {
     
-    position: center;
+    position: absolute;
+    bottom: 95px;
+    right: 0px;
     background-color: rgba(255,255,255,.8);
-    padding: 0px 10px 0px 60px;
+    padding: 3px 8px 3px 8px;
     width: 250px;
     text-align: center;
     
 }
 
-.byline {
-    
-    text-align: left;
-    font-size: 85%;
-    padding-top: 10px;
-    font-family: "Merriweather";
-}
-
-.runner-up {
-    text-align: left;
-    padding-top: 10px;
-   
-}
-
-.sidebar {
-    text-align: left;
-    float: left;
-    position:left;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: lightpink;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    
-
-    
-    
-    
-}
 
 h5 {
     
@@ -471,25 +373,138 @@ h6 {
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
     
-    @media (max-width: 570px) {
-        
-         
-    }
-    
  
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-        max-width: 100%;
-    }
+@media (max-width: 1024px) {
     
-    .food-buttons {
-        position: static;
+    .headline {
+        
+        margin-top: 0px;
         
     }
-  
     
+    .container {
+         
+         padding-top: 50px;
+     }
+    
+    .row1 {
+         
+         margin-left: 10%;
+         margin-right: 10%;
+     }
+     
+     .row3 {
+         
+         margin-left: 10%;
+         margin-right: 10%;
+     }
+    
+    .pullquote {
+    
+    margin-top: -400px;
+    margin-bottom: 220px;
+    color: white;
+    text-shadow: 0 0 10px #000000;
+    width: 50%;
+    margin-left: 300px;
+}
+    
+    .quote {
+        
+        font-size: 150%;
+    }
+    
+    .name {
+        
+        font-size: 110%;
+    }
+    
+    .attribution {
+        
+        font-size: 110%;
+    }
+}
+
+
+
+
+ @media (max-width: 760px) {
+        
+        .headline {
+        
+        margin-top: 50px;
+        
+    }
+    
+    .life {
+    
+    font-size: 400%;
+    
+}
+
+.without {
+    
+    font-size: 250%; 
+}
+
+.leo {
+    
+    font-size: 400%;
+    
+}
+     
+     .container {
+         
+         padding-top: 50px;
+     }
+        
+     .row1 {
+         
+         margin-left: 10%;
+         margin-right: 10%;
+     }
+     
+     .row3 {
+         
+         margin-left: 10%;
+         margin-right: 10%;
+     }
+     
+     .pullquote {
+    
+    margin-top: -220px;
+    margin-bottom: 90px;
+    color: white;
+    text-shadow: 0 0 10px #000000;
+    width: 50%;
+    margin-left: 140px;
+}
+     
+     .quote {
+        
+        font-size: 100%;
+    }
+    
+    .name {
+        
+        font-size: 80%;
+    }
+    
+    .attribution {
+        
+        font-size: 80%;
+    }
+         
+    }
+
+@media (max-width: 400px) {
+ 
+    
+    .pullquote {
+        
+        margin-bottom:50px;
+    }
     
 }
