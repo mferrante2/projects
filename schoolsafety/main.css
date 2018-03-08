@@ -225,6 +225,11 @@ body, html {
     
 }
 
+.col-md-9 {
+    
+    
+}
+
 .container {
     
     padding-top: 50px;
@@ -270,9 +275,9 @@ body, html {
     
 }
 
-.cutline {
+.footer {
     
-    
+    margin-top: 50px;
 }
 
 .w3-wide {
