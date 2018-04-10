@@ -1086,4 +1086,19 @@ a:hover {
 }
 
 
+@media screen and (max-width: 600px) {
+    div#responsivevideo {
+        width: 200%;
+        margin-left: -100%;
+    }
+}
+    
+    @media screen and (min-width: 601px) and (max-width: 1000px) {
+    div#responsivevideo {
+        width: 135%;
+        margin-left: -35%;
+    }
+    
+}
+
 
