@@ -1146,6 +1146,11 @@ a:hover {
         
      }
     
+    .sidebar-links {
+        display: none;
+        
+    }
+    
     
      
 }
@@ -1164,6 +1169,7 @@ a:hover {
         grid-column: 1/10;
     }
     
+     
 }
 
 
