@@ -44,7 +44,7 @@ body, html {
 
 a:hover {
     
-    color: black;
+    color: rgb(255,127,43);
     text-decoration: none;
     
 }
@@ -132,12 +132,14 @@ a:hover {
     
 }
 
+/*
 .byline {
     
     margin-bottom: 50px;
-    font-size: 100%;
+     font-size: 100%; 
     color: white;
 }
+*/
 
 .dateline {
     
@@ -147,17 +149,36 @@ a:hover {
     margin-bottom: 10px;
 }
 
+
 .deck {
     
-    font-size: 60%;
+    margin-left: 40px;
+    
+}
+
+.deck-line {
+    
+    font-size: 65%;
     line-height: 110%;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     margin-top: 50px;
-    margin-left: 41px;
     color: white;
     font-family: Oswald;
     text-transform: uppercase;
-    width: 600px;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.byline-bike {
+    
+    text-align: left;
+    font-family: Merriweather;
+    font-size: 37%;
+    text-transform: none;
+    width: 410px;
+    
 }
 
 
@@ -366,7 +387,7 @@ a:hover {
 
 .headline-image {
     
-    margin-bottom: -120px;
+    margin-bottom: -115px;
     
 }
 
@@ -396,7 +417,7 @@ a:hover {
 
 .sketch-sidebar {
     
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .biking-video {
@@ -590,14 +611,7 @@ a:hover {
     float: left;
 }
 
-.byline-bike {
-    
-    text-align: center;
-    font-family: Merriweather;
-    font-size: 80%;
-    margin-bottom: 30px;
-    
-}
+
 
 .video-container {
     
@@ -629,7 +643,7 @@ a:hover {
 
 .unmute-button {
     opacity: .8;
-    background-color: rgb(255,127,43, 0);
+    background-color: rgba(255,127,43, 0);
     border: none;
     visibility: visible;
     
@@ -637,7 +651,7 @@ a:hover {
 
 .mute-button {
     opacity: .8;
-    background-color: rgb(255,127,43, 0);
+    background-color: rgba(255,127,43,0);
     border: none;
     visibility: hidden;
     
@@ -678,7 +692,7 @@ a:hover {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: rgb(255,127,43, .6);
+    background-color: rgba(255,127,43,.6);
     border-radius: 50%;
     z-index: 20;
     left: 32%;
@@ -698,7 +712,7 @@ a:hover {
     padding: 10px;
     width: 200px;
     border: solid;
-    border-color: rgb(255,127,43);
+    border-color: rgba(255,127,43,.6);
 }
 
 .circle-handlebar:hover .circle-handlebar-text{
@@ -712,7 +726,7 @@ a:hover {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: rgb(255,127,43, .6);
+    background-color: rgba(255,127,43,.6);
     border-radius: 50%;
     z-index: 20;
     left: 50%;
@@ -736,7 +750,7 @@ a:hover {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: rgb(255,127,43, .6);
+    background-color: rgba(255,127,43,.6);
     border-radius: 50%;
     z-index: 10;
     left: 58%;
@@ -760,7 +774,7 @@ a:hover {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: rgb(255,127,43, .6);
+    background-color: rgba(255,127,43,.6);
     border-radius: 50%;
     left: 25%;
     top: 40%;
@@ -783,7 +797,7 @@ a:hover {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: rgb(255,127,43, .6);
+    background-color: rgba(255,127,43,.6);
     border-radius: 50%;
     left: 65%;
     top: 63%;
@@ -807,7 +821,7 @@ a:hover {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: rgb(255,127,43, .6);
+    background-color: rgba(255,127,43,.6);
     border-radius: 50%;
     left: 47%;
     top: 55%;
@@ -823,6 +837,7 @@ a:hover {
 .circle-battery:hover .circle-battery-text {
     
     visibility: visible;
+    z-index: 90;
 
 }
 
@@ -898,13 +913,7 @@ a:hover {
         
         margin-left: 0px;
     }
-    
-    .headline-image {
-        
-        margin-left: 0px;
-        width: 100%;
-    }
-    
+       
     .main-article {
         
         grid-column: 1/4;
@@ -1036,31 +1045,37 @@ a:hover {
    
     }
     
-    
-    
-}
-
- @media (max-width: 700px) {
-
      .headline-image {
-         visibility: hidden;
          display: none;
+         visibility: hidden;
      }
      
      .headline-image-mobile {
          
          visibility: visible;
-         margin-bottom: -20px;
+         margin-bottom: -10px;
          margin-left: 0px;
-         width: 100%;
+         width: 350px;
+         
      }
      
-     .deck {
+     
+    .deck {
+        
+        margin-left: 35px;
+        width: 285px;
+        font-size: 34px;
+        
+    }
+    
+    .deck-line {
          
-         width: 300px;
-         margin-left: 30px;
          margin-top: 0px;
+        
+        
      }
+    
+    
      
 }
 
@@ -1077,28 +1092,27 @@ a:hover {
         
         grid-column: 1/10;
     }
-     
-     .deck {
-         
-         font-size: 80%;
-
-     }
+    
 }
 
 
 @media screen and (max-width: 600px) {
-    div#responsivevideo {
-        width: 200%;
-        margin-left: -100%;
+    video.video-cover {
+     object-fit: cover;
+     width:100%;
+     object-position:80% 50%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    video.video-cover {
+     object-fit: cover;
+     width:100%;
+     object-position:100% 50%;
     }
 }
     
-    @media screen and (min-width: 601px) and (max-width: 1000px) {
-    div#responsivevideo {
-        width: 135%;
-        margin-left: -35%;
-    }
-    
-}
+
+
 
 
