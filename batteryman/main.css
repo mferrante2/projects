@@ -687,6 +687,20 @@ a:hover {
     margin: 10px;
 }
 
+.attribution-section {
+    
+    margin-top: 50px;
+    border-top: solid 1px;
+    padding-top: 50px; 
+    
+}
+
+.attribution {
+    
+    font-style: italic;
+    font-size: 80%;
+}
+
 
 
 /* map */
