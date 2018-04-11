@@ -1005,41 +1005,48 @@ a:hover {
     
     .circle-handlebar {
     
+    width: 20px;
+    height: 20px;
     left: 30%;
     top: 14%;
    
     }
     
     .circle-seat {
-    
+    width: 20px;
+    height: 20px;
     left: 50%;
     top: 30%;
     
     }
     
     .circle-suspension {
-    
+    width: 20px;
+    height: 20px;
     left: 58%;
     top: 40%;
    
     }
     
     .circle-front {
-    
+    width: 20px;
+    height: 20px;
     left: 25%;
     top: 30%;
    
     }
     
     .circle-gear {
-    
+    width: 20px;
+    height: 20px;
     left: 65%;
     top: 51%;
    
     }
     
     .circle-battery {
-    
+    width: 20px;
+    height: 20px;
     left: 47%;
     top: 40%;
    
@@ -1109,6 +1116,14 @@ a:hover {
      object-fit: cover;
      width:100%;
      object-position:100% 50%;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1600px) {
+    video.video-cover {
+     object-fit: cover;
+     width:100%;
+     object-position:70% 50%;
     }
 }
     
