@@ -532,13 +532,6 @@ a:hover {
     margin-bottom: -50px;
 }
 
-.social-images {
-    
-    display: block;
-    margin: auto;
-    width: 50%;
-    
-}
 
 .headline {
     
@@ -674,6 +667,26 @@ a:hover {
     
     line-height: 100%;
 }
+
+.social-media-grid {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.social-images {
+    
+    width: 130px;
+    margin: auto;
+    
+}
+
+.social-media {
+    
+    width: 40px;
+    margin: 10px;
+}
+
 
 
 /* map */
@@ -1008,7 +1021,7 @@ a:hover {
     width: 20px;
     height: 20px;
     left: 30%;
-    top: 10%;
+    top: 12%;
    
     }
     
@@ -1016,7 +1029,7 @@ a:hover {
     width: 20px;
     height: 20px;
     left: 50%;
-    top: 20%;
+    top: 25%;
     
     }
     
@@ -1024,7 +1037,7 @@ a:hover {
     width: 20px;
     height: 20px;
     left: 58%;
-    top: 30%;
+    top: 35%;
    
     }
     
@@ -1032,7 +1045,7 @@ a:hover {
     width: 20px;
     height: 20px;
     left: 25%;
-    top: 20%;
+    top: 25%;
    
     }
     
@@ -1040,7 +1053,7 @@ a:hover {
     width: 20px;
     height: 20px;
     left: 65%;
-    top: 35%;
+    top: 40%;
    
     }
     
@@ -1048,7 +1061,7 @@ a:hover {
     width: 20px;
     height: 20px;
     left: 47%;
-    top: 35%;
+    top: 37%;
    
     }
     
