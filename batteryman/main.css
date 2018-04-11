@@ -1059,7 +1059,7 @@ a:hover {
     .circle-seat-text {
         
         position: absolute;
-        left: -20px;
+        left: -25px;
         
     }
     
@@ -1074,7 +1074,7 @@ a:hover {
     .circle-suspension-text {
         
         position: absolute;
-        left: -50px;
+        left: -55px;
         
     }
     
@@ -1097,7 +1097,7 @@ a:hover {
     .circle-gear-text {
     
     position: absolute;
-    left: -70px;
+    left: -75px;
   
     
     }
@@ -1108,6 +1108,12 @@ a:hover {
     left: 47%;
     top: 37%;
    
+    }
+    
+    .circle-battery-text {
+        
+        position: absolute;
+        left: -20px;
     }
     
      .headline-image {
