@@ -721,9 +721,9 @@ a:hover {
     height: 30px;
     background-color: rgba(255,127,43,.6);
     border-radius: 50%;
-    z-index: 20;
     left: 32%;
     top: 17%;
+    z-index: 50;
    
 }
 
@@ -755,7 +755,6 @@ a:hover {
     height: 30px;
     background-color: rgba(255,127,43,.6);
     border-radius: 50%;
-    z-index: 10;
     left: 50%;
     top: 36%;
     
@@ -764,14 +763,14 @@ a:hover {
 .circle-seat-text {
     
     visibility: hidden;
-    z-index: 110;
+    z-index: 20;
     
 }
 
 .circle-seat:hover .circle-seat-text {
     
     visibility: visible;
-    z-index: 110;
+
 }
 
 .circle-suspension {
@@ -781,7 +780,6 @@ a:hover {
     height: 30px;
     background-color: rgba(255,127,43,.6);
     border-radius: 50%;
-    z-index: 10;
     left: 58%;
     top: 50%;
    
@@ -790,14 +788,14 @@ a:hover {
 .circle-suspension-text {
     
     visibility: hidden;
-    z-index: 100;
+    z-index: 18;
     
 }
 
 .circle-suspension:hover .circle-suspension-text {
     
     visibility: visible;
-    z-index: 100;
+    
 }
 
 .circle-front {
@@ -809,7 +807,7 @@ a:hover {
     border-radius: 50%;
     left: 25%;
     top: 40%;
-    z-index: 10;
+    z-index: 55;
    
 }
 
@@ -822,7 +820,7 @@ a:hover {
 .circle-front:hover .circle-front-text {
     
     visibility: visible;
-    z-index: 100;
+    
 }
 
 .circle-gear {
@@ -834,7 +832,7 @@ a:hover {
     border-radius: 50%;
     left: 65%;
     top: 63%;
-    z-index: 10;
+   
    
 }
 
@@ -847,7 +845,7 @@ a:hover {
 .circle-gear:hover .circle-gear-text {
     
     visibility: visible;
-    z-index: 100;
+    
 
 }
 
@@ -860,7 +858,7 @@ a:hover {
     border-radius: 50%;
     left: 47%;
     top: 55%;
-    z-index: 10;
+    
    
 }
 
@@ -873,7 +871,7 @@ a:hover {
 .circle-battery:hover .circle-battery-text {
     
     visibility: visible;
-    z-index: 100;
+    
 
 }
 
@@ -886,6 +884,7 @@ a:hover {
     margin-top: 50px;
     margin-bottom: -50px;
 }
+
 
 /
 .bike-photo {
