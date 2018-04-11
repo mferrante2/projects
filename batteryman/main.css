@@ -320,6 +320,7 @@ a:hover {
 .pull-quote-title {
     
     font-family: Oswald;
+    margin-top: -20px;
     
     
 }
@@ -422,7 +423,7 @@ a:hover {
 
 .links-pictures {
     
-   width: 100%;
+   width: 70%;
     margin-bottom: 20px;
     
 }
@@ -764,13 +765,14 @@ a:hover {
     border-radius: 50%;
     left: 50%;
     top: 36%;
+    z-index: 35;
     
 }
 
 .circle-seat-text {
     
     visibility: hidden;
-    z-index: 20;
+    
     
 }
 
@@ -789,13 +791,14 @@ a:hover {
     border-radius: 50%;
     left: 58%;
     top: 50%;
+    z-index: 18;
    
 }
 
 .circle-suspension-text {
     
     visibility: hidden;
-    z-index: 18;
+    
     
 }
 
@@ -865,6 +868,7 @@ a:hover {
     border-radius: 50%;
     left: 47%;
     top: 55%;
+    z-index: 30;
     
    
 }
