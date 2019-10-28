@@ -25,8 +25,10 @@
         padding: 20px 0;
         color: #fff;
       }
+	
+			
 
-      #desc-container {
+      .description-container {
         max-width: 500px;
         max-height: 500px;
         min-width: 200px;
@@ -38,7 +40,7 @@
         -webkit-overflow-scrolling: touch;
       }
 
-      #desc-container > iframe {
+      .description-container > iframe {
         border: none;
         width:100%;
       }
@@ -58,9 +60,15 @@
   <body>
   
   
-    <div id="desc-container" style="display:none">
+    <div id="desc-container" class="description-container" style="display:none">
       <div class="title">Anton, I think I got it to work</div>
       <div class="text">It took quite a bit of practice, but I think we now have an easy to use template. I still need to figure out how to find coordinates, but there was a tutorial for that on his site. We'll play around with it next week. I've noticed, however, that you do need to have the files published on the web for them to work. His javascript requires an http protocol.</div>
+    </div>
+		
+		
+    <div id="desc-container2" class="description-container" style="display:none">
+      <div class="title">Here is the second container</div>
+      <div class="text">You have to add this in a couple of places down below for it to work.</div>
     </div>
   
 
@@ -70,19 +78,21 @@
 
     <script>
 
-var infospot, infospot2, panorama, viewer;
+var infospot2, infospot3, panorama, viewer;
 
-      infospot = new PANOLENS.Infospot();
-      infospot.position.set( 5000.00, -665.23, -3996.49 );
-      infospot.addHoverText( 'Check out the other infospot' );
+  
 
       infospot2 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
       infospot2.position.set( -5000.00, -1825.25, 197.56 );
       infospot2.addHoverElement( document.getElementById( 'desc-container' ), 200 );
+			
+      infospot3 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
+      infospot3.position.set( -5000.00, -1025.25, 197.56 );
+      infospot3.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
 
       panorama = new PANOLENS.ImagePanorama( 'asset/textures/equirectangular/dininghall.jpg' );
-      panorama.add( infospot );
       panorama.add( infospot2 );
+			panorama.add( infospot3 );
 
       viewer = new PANOLENS.Viewer();
       viewer.add( panorama );
