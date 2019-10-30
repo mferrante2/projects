@@ -1857,7 +1857,7 @@ input, select, textarea {
 
 		select option {
 			color: #777;
-			background: #fff;
+			background: #777;
 		}
 
 		select:focus::-ms-value {
@@ -2539,7 +2539,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: #8b8b8b;
+			background-color: #989898;
 		}
 
 		input[type="submit"].icon,
@@ -2783,7 +2783,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb1;
+					border-top: solid 2px #FFFFFF;
 					display: block;
 					padding: 0;
 				}
