@@ -1785,7 +1785,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #102DEB;
+		color: #777;
 		font-size: 3.5em;
 	}
 
@@ -2402,7 +2402,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #4acaa8;
+				background: #102DEB;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2701,7 +2701,7 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background: #102DEB;
-		color: #102DEB;
+		color: #000000;
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
@@ -3076,7 +3076,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
+						background: #102DEB;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
