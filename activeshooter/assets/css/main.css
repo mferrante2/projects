@@ -3076,7 +3076,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #102DEB;
+						background: #173FEB;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
