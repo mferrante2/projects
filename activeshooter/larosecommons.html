@@ -61,14 +61,14 @@
   
   
     <div id="desc-container" class="description-container" style="display:none">
-      <div class="title">Anton, I think I got it to work</div>
-      <div class="text">It took quite a bit of practice, but I think we now have an easy to use template. I still need to figure out how to find coordinates, but there was a tutorial for that on his site. We'll play around with it next week. I've noticed, however, that you do need to have the files published on the web for them to work. His javascript requires an http protocol.</div>
+      <div class="title">Run</div>
+      <div class="text">If a gunman enters an open space, like LaRose Student Center, immediately run to the nearest exit in the opposite direction of the percieved threat.</div>
     </div>
 		
 		
     <div id="desc-container2" class="description-container" style="display:none">
-      <div class="title">Here is the second container</div>
-      <div class="text">You have to add this in a couple of places down below for it to work.</div>
+      <div class="title">Run</div>
+      <div class="text">If at all possible, attempt to avoid exits that are in the gunman's direct line of site. The glass surrounding LaRose Student Commons will not be able to stop bullets.</div>
     </div>
   
 
@@ -83,11 +83,11 @@ var infospot2, infospot3, panorama, viewer;
   
 
       infospot2 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
-      infospot2.position.set( -5000.00, -1825.25, 197.56 );
+      infospot2.position.set( -4719.78, -663.08,1494.43 );
       infospot2.addHoverElement( document.getElementById( 'desc-container' ), 200 );
 			
       infospot3 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
-      infospot3.position.set( -5000.00, -1025.25, 197.56 );
+      infospot3.position.set( 1373.55, -586.37, -4761.56 );
       infospot3.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
 
       panorama = new PANOLENS.ImagePanorama( 'asset/textures/equirectangular/larosecommons.jpg' );
