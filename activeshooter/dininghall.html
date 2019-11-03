@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
-    <title>Panolens.js panorama image panorama</title>
+    <title>McEwen Dining Hall</title>
    <style>
       html, body {
         margin: 0;
@@ -71,14 +71,17 @@
       <div class="text">If the gunman enters the main entrance of McEwen Dining Hall, attempt to make it the nearest exit without being heard or seen.</div>
     </div>
   
-
+<div id="desc-container3" class="description-container" style="display:none">
+      <div class="title">RUN</div>
+      <div class="text">Since McEwen Dining Hall has multiple exits, only run to the second floor of the building if the gunman is in pursuit.</div>
+    </div>
     
     <script src="js/three.min.js"></script>
     <script src="js/panolens.min.js"></script>
 
     <script>
 
-var infospot2, infospot3, panorama, viewer;
+var infospot2, infospot3, infospot4, panorama, viewer;
 
   
 
@@ -87,12 +90,17 @@ var infospot2, infospot3, panorama, viewer;
       infospot2.addHoverElement( document.getElementById( 'desc-container' ), 200 );
 			
       infospot3 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
-      infospot3.position.set( -5000.00, -1025.25, -15000.00 );
+      infospot3.position.set( 3231.78, 69.57, -3804.42 );
       infospot3.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
+	    
+      infospot4 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
+      infospot4.position.set( -3890.30, -215.62, -3116.63 );
+      infospot4.addHoverElement( document.getElementById( 'desc-container3' ), 200 ); 
 
       panorama = new PANOLENS.ImagePanorama( 'asset/textures/equirectangular/dininghall.jpg' );
       panorama.add( infospot2 );
-			panorama.add( infospot3 );
+      panorama.add( infospot3 );
+      panorama.add( infospot4 );
 
       viewer = new PANOLENS.Viewer();
 	    autoHideInfospot: false // Auto hide infospots
