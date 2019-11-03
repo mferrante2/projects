@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
-    <title>Panolens.js panorama image panorama</title>
+    <title>Carol Grotnes Belk Library</title>
    <style>
       html, body {
         margin: 0;
@@ -71,14 +71,17 @@
       <div class="text">When evading the gunman, run from obstructive structure to obstructive structure to avoid being hit by bullets and ricochettes.</div>
     </div>
   
-
+  <div id="desc-container3" class="description-container" style="display:none">
+      <div class="title">Run</div>
+      <div class="text">Only run run to the second floor of the library if the gunman is in pursuit. Otherwise look for alternative exits on the first floor.</div>
+    </div>
     
     <script src="js/three.min.js"></script>
     <script src="js/panolens.min.js"></script>
 
     <script>
 
-var infospot2, infospot3, panorama, viewer;
+var infospot2, infospot3, infospot4, panorama, viewer;
 
   
 
@@ -89,6 +92,10 @@ var infospot2, infospot3, panorama, viewer;
       infospot3 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
       infospot3.position.set( 1024.99, -706.09, -4839.91 );
       infospot3.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
+	    
+      infospot4 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
+      infospot4.position.set( 2692.11, -1259.88, -4009.76 );
+      infospot4.addHoverElement( document.getElementById( 'desc-container3' ), 200 );
 
       panorama = new PANOLENS.ImagePanorama( 'asset/textures/equirectangular/belklibrary.jpg' );
       panorama.add( infospot2 );
