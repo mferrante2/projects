@@ -61,22 +61,22 @@
   
   
     <div id="desc-container" class="description-container" style="display:none">
-      <div class="title">Run</div>
+	    <div class="title"><strong>RUN</strong></div>
       <div class="text">In an open space, like Phi Beta Kappa Commons, hiding is not an option. Immediately run in the opposite direction of the percieved threat using large structures, like this pot, as cover from stray bullets and richochettes. Take several moments behind each structure to wait for the oppurtune moment to run to the next structure.</div>
     </div>
 		
     <div id="desc-container2" class="description-container" style="display:none">
-      <div class="title">Run</div>
+	    <div class="title"><strong>RUN</strong></div>
       <div class="text">If you've made it to a building, do not stop running. Once within the facility, immediately look for another exit and continue putting as much distance between you and the gunman as possible.</div>
     </div>
   
   <div id="desc-container3" class="description-container" style="display:none">
-      <div class="title">Run</div>
+	  <div class="title"><strong>RUN</strong></div>
       <div class="text">If you are forced to run down the center of the Academic Pavilion lawn, run from tree to tree and wait for the oppurtune movement to make the next dash — when the gunman is reloading, or is distracted. When running between trees, run in a pattern to avoid being a stationairy target.</div>
     </div>
 	  
    <div id="desc-container4" class="description-container" style="display:none">
-      <div class="title">Fight</div>
+	   <div class="title"><strong>FIGHT</strong></div>
       <div class="text">If the gunman draws his weapons in the center of Phi Beta Kappa Commons, fighting is only an option for those nearest to the gunman. Assuming that there are not makeshift weapons in reachable distance, neutralize the firearm as quickly as possible. Attempt to gauge the gunmans eyes and attack other weak spots, such as the throat and groin.</div>
     </div>
     
@@ -87,20 +87,24 @@
 
 var infospot2, infospot3, infospot4, infospot5, panorama, viewer;
 
+//Plant
       infospot2 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
       infospot2.position.set( -2393.30, -294.77, -4371.51 );
       infospot2.addHoverElement( document.getElementById( 'desc-container' ), 200 );
-			
+	    
+//Building			
       infospot3 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
-      infospot3.position.set( -2335.25, 369.38, -4397.81 );
+      infospot3.position.set( 2259.56, 302.96, -4439.30 );
       infospot3.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
 	    
+//Tree	    
       infospot4 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
-      infospot4.position.set( -4979.37, 158.77, -274.57 );
+      infospot4.position.set( 4964.12, 437.42, -288.57 );
       infospot4.addHoverElement( document.getElementById( 'desc-container3' ), 200 );
 	    
+//Center	    
       infospot5 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
-      infospot5.position.set( -4979.37, 158.77, -274.57 );
+      infospot5.position.set( -4904.05, -901.68, 202.61 );
       infospot5.addHoverElement( document.getElementById( 'desc-container4' ), 200 );
 
       panorama = new PANOLENS.ImagePanorama( 'asset/textures/equirectangular/phibeta.jpg' );
