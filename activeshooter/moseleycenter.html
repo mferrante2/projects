@@ -78,7 +78,7 @@
 
     <script>
 
-var infospot2, infospot3, panorama, viewer;
+var infospot2, infospot3, infospot4, panorama, viewer;
 
   
 
@@ -87,12 +87,17 @@ var infospot2, infospot3, panorama, viewer;
       infospot2.addHoverElement( document.getElementById( 'desc-container' ), 200 );
 			
       infospot3 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
-      infospot3.position.set( -5000.00, -1025.25, 197.56 );
+      infospot3.position.set( 4902.51, 92.37, -942.09 );
       infospot3.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
+	  
+      infospot4 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
+      infospot4.position.set( -2686.25, 244.25, 4197.75 );
+      infospot4.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
 
       panorama = new PANOLENS.ImagePanorama( 'asset/textures/equirectangular/moseleycenter.jpg' );
-      panorama.add( infospot2 );
-			panorama.add( infospot3 );
+      panorama.add (infospot2);
+      panorama.add (infospot3);
+      panorama.add (infospot4);
 
       viewer = new PANOLENS.Viewer();
 	    autoHideInfospot: false // Auto hide infospots
