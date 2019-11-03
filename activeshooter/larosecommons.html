@@ -71,7 +71,10 @@
       <div class="text">If at all possible, attempt to avoid exits that are in the gunman's direct line of site. The glass surrounding LaRose Student Commons will not be able to stop bullets.</div>
     </div>
   
-
+    <div id="desc-container3" class="description-container" style="display:none">
+      <div class="title">Fight</div>
+      <div class="text">If close to the gunman when they enter the building, attempt to surprise them as they take their hands of the firearm to open the door. Choose a staging point for your attack that is not in the gunman's direct line of view. In this situation, do not use bulky makeshift weapons that could slow down your mobility.</div>
+    </div>
     
     <script src="js/three.min.js"></script>
     <script src="js/panolens.min.js"></script>
@@ -89,6 +92,10 @@ var infospot2, infospot3, panorama, viewer;
       infospot3 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
       infospot3.position.set( 1373.55, -586.37, -4761.56 );
       infospot3.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
+	    
+      infospot4 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
+      infospot4.position.set( -4129.63, -881.18, -2659.76 );
+      infospot4.addHoverElement( document.getElementById( 'desc-container3' ), 200 );
 
       panorama = new PANOLENS.ImagePanorama( 'asset/textures/equirectangular/larosecommons.jpg' );
       panorama.add( infospot2 );
