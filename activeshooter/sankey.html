@@ -79,12 +79,18 @@
 </div>
     </div>
     
+	  <div id="desc-container4" class="description-container" style="display:none">
+	   <div class="title"><strong>FIGHT</strong></div>
+      <div class="text">When preparing to ambush the gunman, try to keep the element of surprise by avoiding being seeing through this glass wall.
+</div>
+    </div>
+	  
     <script src="js/three.min.js"></script>
     <script src="js/panolens.min.js"></script>
 
     <script>
 
-var infospot2, infospot3, infospot4, panorama, viewer;
+var infospot2, infospot3, infospot4, infospot5, panorama, viewer;
 	    
 //Door
       infospot2 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
@@ -99,12 +105,18 @@ var infospot2, infospot3, infospot4, panorama, viewer;
 //Window	    
       infospot4 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
       infospot4.position.set( -128.85, -193.08, 4985.66 );
-      infospot4.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
+      infospot4.addHoverElement( document.getElementById( 'desc-container3' ), 200 );
+	    
+//Glass	    
+      infospot5 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
+      infospot5.position.set(-4294.07, -24.28, -2553.77);
+      infospot5.addHoverElement( document.getElementById( 'desc-container4' ), 200 );
 
       panorama = new PANOLENS.ImagePanorama( 'asset/textures/equirectangular/sankey.JPG' );
-      panorama.add( infospot2 );
-      panorama.add( infospot3 );
-      panorama.add (infospot4 );
+      panorama.add ( infospot2 );
+      panorama.add ( infospot3 );
+      panorama.add ( infospot4 );
+      panorama.add ( infospot5 );
 
       viewer = new PANOLENS.Viewer();
 	    	    autoHideInfospot: false // Auto hide infospots
