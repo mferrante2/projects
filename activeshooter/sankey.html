@@ -61,18 +61,18 @@
   
   
     <div id="desc-container" class="description-container" style="display:none">
-      <div class="title">FIGHT</div>
+	    <div class="title"><strong>FIGHT</strong></div>
       <div class="text">The best option in a glassed room with limited exits is to stop the gunman as opens the door to the classroom.</div>
     </div>
 		
 		
     <div id="desc-container2" class="description-container" style="display:none">
-      <div class="title">HIDE</div>
+	    <div class="title"><strong>HIDE</strong></div>
       <div class="text">Do not hide behind this podium, which is the classrooms only hiding spot. It will limit your motion and give the gunman the advantage.</div>
     </div>
   
    <div id="desc-container3" class="description-container" style="display:none">
-      <div class="title">RUN</div>
+	   <div class="title"><strong>RUN</strong></div>
       <div class="text">Do not attempt to escape through these windows. The two-paned windows do not have an opening mechanism and attempting to break them will call more attention to the individuals inside the classroom.</div>
     </div>
     
@@ -82,15 +82,18 @@
     <script>
 
 var infospot2, infospot3, infospot4, panorama, viewer;
-
+	    
+//Door
       infospot2 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
       infospot2.position.set( -856.29, -244.76, -4910.04 );
       infospot2.addHoverElement( document.getElementById( 'desc-container' ), 200 );
-			
+	    
+//Podium			
       infospot3 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
       infospot3.position.set( 4182.45, -271.94, 2707.81 );
       infospot3.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
 	    
+//Window	    
       infospot4 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
       infospot4.position.set( -128.85, -193.08, 4985.66 );
       infospot4.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
