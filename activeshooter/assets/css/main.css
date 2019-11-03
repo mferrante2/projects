@@ -1941,7 +1941,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #989898;
 			border-color: #989898;
-			color: #ffffff;
+			color: #989898;
 			content: '\f00c';
 		}
 
@@ -3070,7 +3070,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #173FEB;
+						background: ##989898;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
