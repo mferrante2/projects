@@ -61,19 +61,19 @@
   
   
     <div id="desc-container" class="description-container" style="display:none">
-      <div class="title">FIGHT</div>
-      <div class="text">If you are near the entrance that the gunman enters through, and feel compelled to act, use surrounding materials and furniture as makeshift weapons to defend yourself and distract the gunman. Do not use items that will slow down your mobility.</div>
+	    <div class="title"><strong>FIGHT</strong></div>
+      <div class="text">If you are near the entrance that a gunman uses to enter Carol Grotnes Belk Library, and feel compelled to act, use surrounding furniture and items as makeshift weapons. Ideally, these would be light weight items that would not slow down your mobility — for example, a light chair. This could distract the gunman long enough for others in the library to escape.</div>
     </div>
 		
 		
     <div id="desc-container2" class="description-container" style="display:none">
-      <div class="title">Run</div>
+      <div class="title"><strong>RUN</strong></div>
       <div class="text">When evading the gunman, run from obstructive structure to obstructive structure to avoid being hit by bullets and ricochettes.</div>
     </div>
   
   <div id="desc-container3" class="description-container" style="display:none">
-      <div class="title">Run</div>
-      <div class="text">Only run to the second floor of the library if the gunman is in pursuit. Otherwise look for alternative exits on the first floor.</div>
+      <div class="title"><strong>RUN</strong></div>
+      <div class="text">Only attempt to run to the second or third floor of Carol Grotnes Belk Library if the gunman is pursuing you. There are more than half a dozen exits on the first floor, these would be your ideal routes out of the library.</div>
     </div>
     
     <script src="js/three.min.js"></script>
@@ -83,14 +83,17 @@
 
 var infospot2, infospot3, infospot4, panorama, viewer;
 
+//Chair    
       infospot2 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
       infospot2.position.set( -1008.49, -2070.45, 4430.73 );
       infospot2.addHoverElement( document.getElementById( 'desc-container' ), 200 );
-			
+
+//Pillar    
       infospot3 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
       infospot3.position.set( 1024.99, -706.09, -4839.91 );
       infospot3.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
-	    
+
+//Second Floor
       infospot4 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
       infospot4.position.set( 2272.49, -1136.41, 4298.08 );
       infospot4.addHoverElement( document.getElementById( 'desc-container3' ), 200 );
