@@ -83,8 +83,6 @@
 
 var infospot2, infospot3, infospot4, panorama, viewer;
 
-  
-
       infospot2 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
       infospot2.position.set( -1008.49, -2070.45, 4430.73 );
       infospot2.addHoverElement( document.getElementById( 'desc-container' ), 200 );
@@ -100,6 +98,7 @@ var infospot2, infospot3, infospot4, panorama, viewer;
       panorama = new PANOLENS.ImagePanorama( 'asset/textures/equirectangular/belklibrary.jpg' );
       panorama.add( infospot2 );
       panorama.add( infospot3 );
+      panorama.add ( infospot4 ); 
 
       viewer = new PANOLENS.Viewer();
 	   autoHideInfospot: false // Auto hide infospots
