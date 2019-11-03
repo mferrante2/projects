@@ -61,17 +61,19 @@
   
   
     <div id="desc-container" class="description-container" style="display:none">
-      <div class="title">Hide</div>
-      <div class="text">If the gunman enters the building before you are able to escape and are trapped in Moseley Center Offices, immediately turn off the lights and lock the door. Attempt to barricade the door with movable furniture, but only do so if noise is down.</div>
-    </div>
-		
+      <div class="title">Run</div>
+      <div class="text">The student activity side of Moseley Student Center has multiple entrances and exits. There is no reason to hide or fight if a gunman enters this facility. Run in the opposite  direction of the perceieved threat. If it is unclear where the gunman is, use context clues to identify the direction of the threat. </div>
+    </div>	
 		
     <div id="desc-container2" class="description-container" style="display:none">
       <div class="title">Run</div>
-      <div class="text">The student activity side of Moseley Student Center has multiple entrances and exits. There is no reason to hide or fight if a gunman enters this facility. Run in the opposite  direction of the perceieved threat. If it is unclear where the gunman is, use context clues to identify the direction of the threat.</div>
+      <div class="text">When attempting to escape, run from structure to structure to avoid direct hits and richochettes from bullets.</div>
     </div>
   
-
+    <div id="desc-container3" class="description-container" style="display:none">
+      <div class="title">Hide</div>
+      <div class="text">If the gunman enters the building before you are able to escape and are trapped in Moseley Center Offices, immediately turn off the lights and lock the door. Attempt to barricade the door with movable furniture, but only do so if noise is down.</div>
+    </div>
     
     <script src="js/three.min.js"></script>
     <script src="js/panolens.min.js"></script>
@@ -92,7 +94,7 @@ var infospot2, infospot3, infospot4, panorama, viewer;
 	  
       infospot4 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
       infospot4.position.set( -2686.25, 244.25, 4197.75 );
-      infospot4.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
+      infospot4.addHoverElement( document.getElementById( 'desc-container3' ), 200 );
 
       panorama = new PANOLENS.ImagePanorama( 'asset/textures/equirectangular/moseleycenter.jpg' );
       panorama.add (infospot2);
